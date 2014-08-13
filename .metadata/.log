@@ -1,0 +1,9 @@
+!SESSION 2014-08-13 13:15:17.845 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.core 1 0 2014-08-13 13:16:14.432
+!MESSAGE Indexed 'Netburner_OSD' (0 sources, 13 headers) in 0.62 sec: 0 declarations; 0 references; 13 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)

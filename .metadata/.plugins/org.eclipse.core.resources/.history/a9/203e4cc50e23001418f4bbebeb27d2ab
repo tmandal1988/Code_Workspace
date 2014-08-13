@@ -1,0 +1,16 @@
+/*
+ * PINS_Definations.cpp
+ *
+ *  Created on: Aug 13, 2014
+ *      Author: Tanmay
+ */
+
+#include "PINS_Definations.h"
+#include <basictypes.h>
+#include <sim.h>
+#include <pins.h>
+
+void initPINS()
+{
+
+
