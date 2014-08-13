@@ -38,7 +38,7 @@ extern "C"{
 	void UserMain( void * pd);
 }
 
-const char *AppName = "Netburner OSD v2";
+const char *AppName = "Netburner OSD v1";
 
 /*****************************UserMain***************************************************/
 void UserMain( void* pd ){

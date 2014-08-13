@@ -38,7 +38,7 @@ extern "C"{
 	void UserMain( void * pd);
 }
 
-const char *AppName = "Netburner OSD v2";
+const char *AppName = "Netburner OSD v1";
 
 /*****************************UserMain***************************************************/
 void UserMain( void* pd ){
@@ -159,14 +159,14 @@ void UserMain( void* pd ){
 
 
 
-	x=251;
+	x=250;
 
 	OSD_DOUT[0]=0x06;OSD_DOUT[1] =x;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x1E;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x21;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -174,7 +174,7 @@ void UserMain( void* pd ){
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x0B;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x20;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -182,7 +182,7 @@ void UserMain( void* pd ){
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x18;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x1F;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -190,7 +190,7 @@ void UserMain( void* pd ){
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x17;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x49;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -199,7 +199,15 @@ void UserMain( void* pd ){
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x0B;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x13;
+	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
+	while(!DSPIdone(1)){};//wait for DSPI to finish
+
+	OSD_DOUT[0]=0x06;OSD_DOUT[1] =x+5;
+	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
+	while(!DSPIdone(1)){};//wait for DSPI to finish
+
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x1C;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -207,21 +215,15 @@ void UserMain( void* pd ){
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAH
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
+
+
 	x=0;
+
 	OSD_DOUT[0]=0x06;OSD_DOUT[1] =x;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x23;
-	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
-	while(!DSPIdone(1)){};//wait for DSPI to finish
-
-
-	OSD_DOUT[0]=0x06;OSD_DOUT[1] =x+1;
-	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
-	while(!DSPIdone(1)){};//wait for DSPI to finish
-
-	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x00;
+	OSD_DOUT[0]=0x07;OSD_DOUT[1] =0x16;
 	DSPIStart(1,OSD_DOUT,OSD_DIN,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
