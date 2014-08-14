@@ -1,0 +1,26 @@
+/*
+ * ReplaceCharacter.h
+ *
+ *  Created on: Aug 14, 2014
+ *      Author: Tanmay
+ */
+
+#include <basictypes.h>
+
+#ifndef REPLACECHARACTER_H_
+#define REPLACECHARACTER_H_
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+void ReplaceCharacter(uint8_t C_Add);
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#endif /* REPLACECHARACTER_H_ */

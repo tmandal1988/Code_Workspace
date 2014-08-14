@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="0" version="2.0">
 <workbenchAdvisor/>
-<window height="768" width="1024" x="720" y="82">
+<window height="768" maximized="true" width="1024" x="164" y="118">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="122" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="153" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="nbeclipse.core.actions.nb" itemType="typeToolBarContribution" x="184" y="22"/>
 <coolItem id="org.eclipse.cdt.ui.CElementCreationActionSet" itemType="typeToolBarContribution" x="167" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="91" y="22"/>
-<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="53" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.cdt.ui.editor.CEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -25,10 +27,36 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="Netburner_OSD.cpp" partName="Netburner_OSD.cpp" path="C:/Users/Tanmay/Desktop/Work/Electronics/Netburner/Code_Workspace/Netburner_OSD/Netburner_OSD.cpp" title="Netburner_OSD.cpp" tooltip="Netburner_OSD/Netburner_OSD.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Netburner_OSD/Netburner_OSD.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5401" selectionTopPixel="2425"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="PINS_Definations.cpp" partName="PINS_Definations.cpp" path="C:/Users/Tanmay/Desktop/Work/Electronics/Netburner/Code_Workspace/Netburner_OSD/PINS_Definations.cpp" title="PINS_Definations.cpp" tooltip="Netburner_OSD/PINS_Definations.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Netburner_OSD/PINS_Definations.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" title="main.c" tooltip="C:\Users\Tanmay\Downloads\MAX7456_sample_code\MAX7456_sample_code\main.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" uri="file:/C:/Users/Tanmay/Downloads/MAX7456_sample_code/MAX7456_sample_code/main.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1140" selectionTopPixel="675"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ReplaceCharacter.h" partName="ReplaceCharacter.h" path="C:/Users/Tanmay/Desktop/Work/Electronics/Netburner/Code_Workspace/Netburner_OSD/ReplaceCharacter.h" title="ReplaceCharacter.h" tooltip="Netburner_OSD/ReplaceCharacter.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Netburner_OSD/ReplaceCharacter.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="101" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="ReplaceCharacter.cpp" partName="ReplaceCharacter.cpp" path="C:/Users/Tanmay/Desktop/Work/Electronics/Netburner/Code_Workspace/Netburner_OSD/ReplaceCharacter.cpp" title="ReplaceCharacter.cpp" tooltip="Netburner_OSD/ReplaceCharacter.cpp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Netburner_OSD/ReplaceCharacter.cpp"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="17478" selectionTopPixel="6655"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.navigator.ProjectExplorer" partName="Project Explorer">
@@ -40,6 +68,9 @@
 <view id="nbeclipse.tools.nb.nbconfig" partName="NBConfig"/>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Errors"/>
+</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="90" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -56,7 +87,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="nbeclipse.core.perspective.netburner">
+<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="nbeclipse.core.perspective.netburner">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="nbeclipse.core.perspective.NBPerspectiveFactory" id="nbeclipse.core.perspective.netburner" label="NetBurner"/>
 <alwaysOnActionSet id="nbeclipse.core.actions.nb"/>
@@ -144,7 +175,165 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Netburner_OSD/Netburner_OSD.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Netburner_OSD/ReplaceCharacter.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Netburner_OSD/PINS_Definations.cpp"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Netburner_OSD/ReplaceCharacter.cpp"/>
+<editor factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" uri="file:/C:/Users/Tanmay/Downloads/MAX7456_sample_code/MAX7456_sample_code/main.c"/>
+</editors>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2544" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17383" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2544" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="ReplaceCharacter.h" index="1">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="PINS_Definations.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="1836" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="1171" y="0"/>
+</item>
+<item historyLabel="PINS_Definations.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2867" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="1171" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.h" index="1">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="PINS_Definations.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2867" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2695" y="0"/>
+</item>
+<item historyLabel="main.c" index="4">
+<position info="not_deleted" x="1140" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2733" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2826" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="16856" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2272" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17206" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17208" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17208" y="0"/>
+</item>
+<item historyLabel="PINS_Definations.cpp" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17208" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2828" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17206" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2165" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17071" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2251" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17206" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2208" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="3276" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17206" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2165" y="0"/>
+</item>
+<item historyLabel="ReplaceCharacter.cpp" index="3">
+<position info="not_deleted" x="17478" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="2165" y="0"/>
+</item>
+<item historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="5651" y="0"/>
+</item>
+<item active="true" historyLabel="Netburner_OSD.cpp" index="0">
+<position info="not_deleted" x="5647" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -160,5 +349,42 @@
 </trimArea>
 </trimLayout>
 </window>
-<mruList/>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ReplaceCharacter.cpp" tooltip="Netburner_OSD/ReplaceCharacter.cpp">
+<persistable path="/Netburner_OSD/ReplaceCharacter.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PINS_Definations.h" tooltip="Netburner_OSD/PINS_Definations.h">
+<persistable path="/Netburner_OSD/PINS_Definations.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ReplaceCharacter.h" tooltip="Netburner_OSD/ReplaceCharacter.h">
+<persistable path="/Netburner_OSD/ReplaceCharacter.h"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main_ADIS_IMU_v2pt1_1.cpp" tooltip="\\157.182.196.89\Everything\Projects\NASA2010\DataLogger Firmware\main_ADIS_IMU_v2pt1_1.cpp">
+<persistable uri="file:////157.182.196.89/Everything/Projects/NASA2010/DataLogger%20Firmware/main_ADIS_IMU_v2pt1_1.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="C:\Users\Tanmay\Downloads\MAX7456_sample_code\MAX7456_sample_code\main.c">
+<persistable uri="file:/C:/Users/Tanmay/Downloads/MAX7456_sample_code/MAX7456_sample_code/main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dspi.h" tooltip="C:\nburn\MOD5441X\include\dspi.h">
+<persistable uri="file:/C:/nburn/MOD5441X/include/dspi.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="PINS_Definations.cpp" tooltip="Netburner_OSD/PINS_Definations.cpp">
+<persistable path="/Netburner_OSD/PINS_Definations.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="C:\nburn\examples\MOD5441X\DSPI2Serial\main.cpp">
+<persistable uri="file:/C:/nburn/examples/MOD5441X/DSPI2Serial/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="fs_main.c" tooltip="C:\nburn\examples\MOD5441X\MOD54415-EFFS-STD\fs_main.c">
+<persistable uri="file:/C:/nburn/examples/MOD5441X/MOD54415-EFFS-STD/fs_main.c"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.cpp" tooltip="C:\nburn\examples\MOD5441X\MOD54415FactoryApp\main.cpp">
+<persistable uri="file:/C:/nburn/examples/MOD5441X/MOD54415FactoryApp/main.cpp"/>
+</file>
+<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="pinconstant.h" tooltip="C:\nburn\MOD5441X\include\pinconstant.h">
+<persistable uri="file:/C:/nburn/MOD5441X/include/pinconstant.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="Netburner_OSD.cpp" tooltip="Netburner_OSD/Netburner_OSD.cpp">
+<persistable path="/Netburner_OSD/Netburner_OSD.cpp"/>
+</file>
+</mruList>
 </workbench>
