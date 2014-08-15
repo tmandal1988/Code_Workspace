@@ -1,0 +1,135 @@
+/*
+ * Netburner_OSD.cpp
+ *
+ *  Created on: Aug 13, 2014
+ *      Author: Tanmay
+ */
+
+
+///included
+#include "predef.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <basictypes.h>
+#include <ucos.h>
+#include <ctype.h>
+#include <startnet.h>
+#include <autoupdate.h>
+#include <dhcpclient.h>
+#include <taskmon.h>
+#include <smarttrap.h>
+#include <effs_fat/fat.h>
+#include <effs_fat/multi_drive_mmc_mcf.h>
+#include <effs_fat/effs_utils.h>
+#include <sim.h>
+#include <pins.h>
+#include <ucosmcfc.h>
+#include <pinconstant.h>
+#include <HiResTimer.h>
+#include <utils.h>
+#include <constants.h>
+#include <cfinter.h>
+#include <math.h>
+#include <serial.h>
+#include <dspi.h> //needed for IMU communication
+#include "PINS_Definations.h"
+#include "ReplaceCharacter.h"
+#include "OSD_Functions.h"
+
+extern "C"{
+	void UserMain( void * pd);
+}
+
+const char *AppName = "Netburner OSD v4";
+
+/*****************************UserMain***************************************************/
+void UserMain( void* pd ){
+
+	/////Usual Routine
+	InitializeStack();
+	OSChangePrio( MAIN_PRIO );
+	EnableAutoUpdate();
+	EnableTaskMonitor();
+	EnableSmartTraps();
+
+	//BYTE OSD_DIN[8]={0};
+	//BYTE OSD_DOUT[2]={0};
+	//BYTE OSD_Disable[2]={0x00,0x00};
+
+	iprintf( "%s application started\r\n", AppName );
+
+	initPINS();
+	//initOSD();
+
+	OSTimeDly(5);
+
+	DSPIInit(1,2000000,16,0x00,0x01,0,0,0,0,0);//Initializing the Hardware to talk to OSD
+
+	BYTE OSD_Enable[2]={0x00,0x08};
+	DSPIStart(1,OSD_Enable,NULL,2,NULL);//Enable display of OSD image
+	while(!DSPIdone(1)){};//wait for DSPI to finish
+
+	OSTimeDly(5);
+
+	initOSD();
+
+	/*******************replacing 0x0C charcter************************/
+	//ReplaceCharacter(0xC0);//Center Circle
+	//ReplaceCharacter(0xC1);//Vertical Line
+	//ReplaceCharacter(0xC2);//Horizontal Line
+
+	/***********************************Initializing Initial Artificial Horizon*****************************************************************/
+
+	uint8_t x=194;
+	OSD_Position_H(0x00);
+
+	DisplayCharacter(x,0xC0);
+	DisplayCharacter(x-1,0xC2);
+	DisplayCharacter(x+1,0xC2);
+
+	DisplayCharacter(x+7,0xC2);
+	DisplayCharacter(x+8,0xC2);
+	DisplayCharacter(x+9,0xC2);
+	DisplayCharacter(x+10,0xC2);
+	DisplayCharacter(x+11,0xC2);
+
+
+	DisplayCharacter(x-7,0xC2);
+	DisplayCharacter(x-8,0xC2);
+	DisplayCharacter(x-9,0xC2);
+	DisplayCharacter(x-10,0xC2);
+	DisplayCharacter(x-11,0xC2);
+
+
+	DisplayCharacter(x+7-90,0xC2);
+	DisplayCharacter(x+8-90,0x00);
+	DisplayCharacter(x+9-90,0xC2);
+	DisplayCharacter(x+10-90,0x00);
+	DisplayCharacter(x+11-90,0xC2);
+
+
+
+	DisplayCharacter(x-7-90,0xC2);
+	DisplayCharacter(x-8-90,0x00);
+	DisplayCharacter(x-9-90,0xC2);
+	DisplayCharacter(x-10-90,0x00);
+	DisplayCharacter(x-11-90,0xC2);
+
+	DisplayCharacter(x+7+90,0xC2);
+	DisplayCharacter(x+8+90,0x00);
+	DisplayCharacter(x+9+90,0xC2);
+	DisplayCharacter(x+10+90,0x00);
+	DisplayCharacter(x+11+90,0xC2);
+
+
+
+	DisplayCharacter(x-7+90,0xC2);
+	DisplayCharacter(x-8+90,0x00);
+	DisplayCharacter(x-9+90,0xC2);
+	DisplayCharacter(x-10+90,0x00);
+	DisplayCharacter(x-11+90,0xC2);
+
+
+	OSTimeDly(2);
+
+}

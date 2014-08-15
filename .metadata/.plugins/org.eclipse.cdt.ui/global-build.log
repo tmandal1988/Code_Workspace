@@ -5793,3 +5793,1939 @@ Time consumed: 989  ms.
 
 **** Internal Builder is used for build               ****
 Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248b4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148660 bytes into 83265 bytes
+Code CheckSum= 3733cc5e
+Struct CheckSum= 8b1df3fb
+S records output with a base address of c0040000
+S records output with a final address of c0054559
+About to write S7...
+******************************Build summary ******************************
+Used 83289 bytes of 33292288 available flash (0.25%)
+Used 620960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 893  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248b4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148660 bytes into 83265 bytes
+Code CheckSum= 3833cc5e
+Struct CheckSum= 8a1df3fb
+S records output with a base address of c0040000
+S records output with a final address of c0054559
+About to write S7...
+******************************Build summary ******************************
+Used 83289 bytes of 33292288 available flash (0.25%)
+Used 620960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 836  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248b4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148660 bytes into 83265 bytes
+Code CheckSum= 3833cc5e
+Struct CheckSum= 8a1df3fb
+S records output with a base address of c0040000
+S records output with a final address of c0054559
+About to write S7...
+******************************Build summary ******************************
+Used 83289 bytes of 33292288 available flash (0.25%)
+Used 620960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 802  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:67: error: 'initOSD' was not declared in this scope
+..\Netburner_OSD.cpp:58: warning: unused variable 'OSD_DIN'
+Build error occurred, build is stopped
+Time consumed: 253  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:59: warning: unused variable 'OSD_DIN'
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248f4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148724 bytes into 83345 bytes
+Code CheckSum= 8341df5f
+Struct CheckSum= 3f0fe06a
+S records output with a base address of c0040000
+S records output with a final address of c00545a9
+About to write S7...
+******************************Build summary ******************************
+Used 83369 bytes of 33292288 available flash (0.25%)
+Used 621024 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1039  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248f4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148724 bytes into 83345 bytes
+Code CheckSum= 8341df5f
+Struct CheckSum= 3f0fe06a
+S records output with a base address of c0040000
+S records output with a final address of c00545a9
+About to write S7...
+******************************Build summary ******************************
+Used 83369 bytes of 33292288 available flash (0.25%)
+Used 621024 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 807  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+In file included from ..\OSD_Functions.cpp:37:
+..\/OSD_Functions.h:25: error: expected initializer before '}' token
+Build error occurred, build is stopped
+Time consumed: 234  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248f4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148724 bytes into 83345 bytes
+Code CheckSum= 8341df5f
+Struct CheckSum= 3f0fe06a
+S records output with a base address of c0040000
+S records output with a final address of c00545a9
+About to write S7...
+******************************Build summary ******************************
+Used 83369 bytes of 33292288 available flash (0.25%)
+Used 621024 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1028  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void DisplayCharacter(uint8_t, uint8_t)':
+..\OSD_Functions.cpp:76: warning: unused variable 'OSD_Enable'
+..\OSD_Functions.cpp:77: warning: unused variable 'OSD_DIN'
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:78: error: 'DisplayCharcter' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 467  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:58: warning: unused variable 'OSD_Enable'
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024834 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148532 bytes into 83441 bytes
+Code CheckSum= 55077ac6
+Struct CheckSum= 6d4a4563
+S records output with a base address of c0040000
+S records output with a final address of c0054609
+About to write S7...
+******************************Build summary ******************************
+Used 83465 bytes of 33292288 available flash (0.25%)
+Used 620832 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1085  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024844 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148548 bytes into 83400 bytes
+Code CheckSum= 85f77f83
+Struct CheckSum= 3c5a40bf
+S records output with a base address of c0040000
+S records output with a final address of c00545e0
+About to write S7...
+******************************Build summary ******************************
+Used 83424 bytes of 33292288 available flash (0.25%)
+Used 620848 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1055  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024894 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148628 bytes into 83372 bytes
+Code CheckSum= a213ea14
+Struct CheckSum= 203dd5fa
+S records output with a base address of c0040000
+S records output with a final address of c00545c4
+About to write S7...
+******************************Build summary ******************************
+Used 83396 bytes of 33292288 available flash (0.25%)
+Used 620928 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 851  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024854 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148564 bytes into 83405 bytes
+Code CheckSum= bc57e844
+Struct CheckSum= 5f9d7e9
+S records output with a base address of c0040000
+S records output with a final address of c00545e5
+About to write S7...
+******************************Build summary ******************************
+Used 83429 bytes of 33292288 available flash (0.25%)
+Used 620864 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1024  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:74: error: expected `;' before 'DisplayCharacter'
+..\Netburner_OSD.cpp:74: warning: statement is a reference, not call, to function 'OSD_Position_H'
+..\Netburner_OSD.cpp:74: warning: statement has no effect
+Build error occurred, build is stopped
+Time consumed: 272  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024854 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148564 bytes into 83404 bytes
+Code CheckSum= 28c96baf
+Struct CheckSum= 9988547f
+S records output with a base address of c0040000
+S records output with a final address of c00545e4
+About to write S7...
+******************************Build summary ******************************
+Used 83428 bytes of 33292288 available flash (0.25%)
+Used 620864 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 868  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+/nburn/include/ucos.h: In function 'void UserMain(void*)':
+/nburn/include/ucos.h:226: error: too few arguments to function 'void OSTimeDly(WORD)'
+..\Netburner_OSD.cpp:64: error: at this point in file
+Build error occurred, build is stopped
+Time consumed: 245  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024874 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148596 bytes into 83476 bytes
+Code CheckSum= 299c4fad
+Struct CheckSum= 98b57019
+S records output with a base address of c0040000
+S records output with a final address of c005462c
+About to write S7...
+******************************Build summary ******************************
+Used 83500 bytes of 33292288 available flash (0.25%)
+Used 620896 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1126  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248b4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148660 bytes into 83382 bytes
+Code CheckSum= e0bfb8e1
+Struct CheckSum= e1920703
+S records output with a base address of c0040000
+S records output with a final address of c00545ce
+About to write S7...
+******************************Build summary ******************************
+Used 83406 bytes of 33292288 available flash (0.25%)
+Used 620960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 942  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248e4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148708 bytes into 83392 bytes
+Code CheckSum= 2e8c969
+Struct CheckSum= bf68f641
+S records output with a base address of c0040000
+S records output with a final address of c00545d8
+About to write S7...
+******************************Build summary ******************************
+Used 83416 bytes of 33292288 available flash (0.25%)
+Used 621008 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 868  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:90: error: redeclaration of 'BYTE OSD_Enable [2]'
+..\Netburner_OSD.cpp:68: error: 'BYTE OSD_Enable [2]' previously declared here
+Build error occurred, build is stopped
+Time consumed: 240  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024904 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148740 bytes into 83418 bytes
+Code CheckSum= a66cf7e7
+Struct CheckSum= 1be4c789
+S records output with a base address of c0040000
+S records output with a final address of c00545f2
+About to write S7...
+******************************Build summary ******************************
+Used 83442 bytes of 33292288 available flash (0.25%)
+Used 621040 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 889  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:105: error: redeclaration of 'BYTE OSD_DOUT [2]'
+..\Netburner_OSD.cpp:76: error: 'BYTE OSD_DOUT [2]' previously declared here
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400249c4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148932 bytes into 83429 bytes
+Code CheckSum= d0bdede6
+Struct CheckSum= f193d0bf
+S records output with a base address of c0040000
+S records output with a final address of c00545fd
+About to write S7...
+******************************Build summary ******************************
+Used 83453 bytes of 33292288 available flash (0.25%)
+Used 621232 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 868  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:88: error: 'OSD_DOUT' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 236  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024904 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148740 bytes into 83419 bytes
+Code CheckSum= 61c43c8d
+Struct CheckSum= 608d82e2
+S records output with a base address of c0040000
+S records output with a final address of c00545f3
+About to write S7...
+******************************Build summary ******************************
+Used 83443 bytes of 33292288 available flash (0.25%)
+Used 621040 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 871  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248e4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148708 bytes into 83382 bytes
+Code CheckSum= 80d11475
+Struct CheckSum= 4180ab3f
+S records output with a base address of c0040000
+S records output with a final address of c00545ce
+About to write S7...
+******************************Build summary ******************************
+Used 83406 bytes of 33292288 available flash (0.25%)
+Used 621008 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 906  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248b4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148660 bytes into 83375 bytes
+Code CheckSum= d54cacce
+Struct CheckSum= ed05131d
+S records output with a base address of c0040000
+S records output with a final address of c00545c7
+About to write S7...
+******************************Build summary ******************************
+Used 83399 bytes of 33292288 available flash (0.25%)
+Used 620960 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 794  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248f4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148724 bytes into 83384 bytes
+Code CheckSum= 82ceb542
+Struct CheckSum= 3f830a60
+S records output with a base address of c0040000
+S records output with a final address of c00545d0
+About to write S7...
+******************************Build summary ******************************
+Used 83408 bytes of 33292288 available flash (0.25%)
+Used 621024 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 913  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400248f4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148724 bytes into 83378 bytes
+Code CheckSum= 82d0b540
+Struct CheckSum= 3f810a68
+S records output with a base address of c0040000
+S records output with a final address of c00545ca
+About to write S7...
+******************************Build summary ******************************
+Used 83402 bytes of 33292288 available flash (0.25%)
+Used 621024 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 888  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024914 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148756 bytes into 83365 bytes
+Code CheckSum= b48413a6
+Struct CheckSum= dcdabef
+S records output with a base address of c0040000
+S records output with a final address of c00545bd
+About to write S7...
+******************************Build summary ******************************
+Used 83389 bytes of 33292288 available flash (0.25%)
+Used 621056 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 844  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024944 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148804 bytes into 83456 bytes
+Code CheckSum= a301c5f8
+Struct CheckSum= 1f4ff912
+S records output with a base address of c0040000
+S records output with a final address of c0054618
+About to write S7...
+******************************Build summary ******************************
+Used 83480 bytes of 33292288 available flash (0.25%)
+Used 621104 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 797  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024974 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148852 bytes into 83521 bytes
+Code CheckSum= 915f7824
+Struct CheckSum= 30f24675
+S records output with a base address of c0040000
+S records output with a final address of c0054659
+About to write S7...
+******************************Build summary ******************************
+Used 83545 bytes of 33292288 available flash (0.25%)
+Used 621152 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 844  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024974 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148852 bytes into 83516 bytes
+Code CheckSum= 907b7740
+Struct CheckSum= 31d6475e
+S records output with a base address of c0040000
+S records output with a final address of c0054654
+About to write S7...
+******************************Build summary ******************************
+Used 83540 bytes of 33292288 available flash (0.25%)
+Used 621152 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 857  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024974 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148852 bytes into 83517 bytes
+Code CheckSum= 906f7734
+Struct CheckSum= 31e24769
+S records output with a base address of c0040000
+S records output with a final address of c0054655
+About to write S7...
+******************************Build summary ******************************
+Used 83541 bytes of 33292288 available flash (0.25%)
+Used 621152 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 840  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024964 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148836 bytes into 83413 bytes
+Code CheckSum= 30a4f97a
+Struct CheckSum= 91acc59b
+S records output with a base address of c0040000
+S records output with a final address of c00545ed
+About to write S7...
+******************************Build summary ******************************
+Used 83437 bytes of 33292288 available flash (0.25%)
+Used 621136 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 827  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024984 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148868 bytes into 83402 bytes
+Code CheckSum= 1475ee67
+Struct CheckSum= addbd099
+S records output with a base address of c0040000
+S records output with a final address of c00545e2
+About to write S7...
+******************************Build summary ******************************
+Used 83426 bytes of 33292288 available flash (0.25%)
+Used 621168 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 856  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024994 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148884 bytes into 83384 bytes
+Code CheckSum= 31ce269
+Struct CheckSum= bf34dc99
+S records output with a base address of c0040000
+S records output with a final address of c00545d0
+About to write S7...
+******************************Build summary ******************************
+Used 83408 bytes of 33292288 available flash (0.25%)
+Used 621184 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 805  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024a04 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148996 bytes into 83486 bytes
+Code CheckSum= 137822bf
+Struct CheckSum= aed99b6d
+S records output with a base address of c0040000
+S records output with a final address of c0054636
+About to write S7...
+******************************Build summary ******************************
+Used 83510 bytes of 33292288 available flash (0.25%)
+Used 621296 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 859  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024a04 
+Block size= 145K
+Execution starts at 40000400 
+compressed 148996 bytes into 83495 bytes
+Code CheckSum= c2bc79c5
+Struct CheckSum= ff95445e
+S records output with a base address of c0040000
+S records output with a final address of c005463f
+About to write S7...
+******************************Build summary ******************************
+Used 83519 bytes of 33292288 available flash (0.25%)
+Used 621296 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 831  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024a44 
+Block size= 145K
+Execution starts at 40000400 
+compressed 149060 bytes into 83619 bytes
+Code CheckSum= 36360265
+Struct CheckSum= 8c1bbb02
+S records output with a base address of c0040000
+S records output with a final address of c00546bb
+About to write S7...
+******************************Build summary ******************************
+Used 83643 bytes of 33292288 available flash (0.25%)
+Used 621360 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1129  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024ad4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 149204 bytes into 83667 bytes
+Code CheckSum= 9a2b4061
+Struct CheckSum= 28267c46
+S records output with a base address of c0040000
+S records output with a final address of c00546eb
+About to write S7...
+******************************Build summary ******************************
+Used 83691 bytes of 33292288 available flash (0.25%)
+Used 621504 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1115  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024ad4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 149204 bytes into 83667 bytes
+Code CheckSum= 9a2b4061
+Struct CheckSum= 28267c46
+S records output with a base address of c0040000
+S records output with a final address of c00546eb
+About to write S7...
+******************************Build summary ******************************
+Used 83691 bytes of 33292288 available flash (0.25%)
+Used 621504 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 804  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:91: error: 'Display_Bottom_Line' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 550  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+Netburner_OSD.o: In function `UserMain':
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:91: undefined reference to `Display_Bottom_Line'
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 808  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c14 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149524 bytes into 83688 bytes
+Code CheckSum= fc2a9c22
+Struct CheckSum= c6271f30
+S records output with a base address of c0040000
+S records output with a final address of c0054700
+About to write S7...
+******************************Build summary ******************************
+Used 83712 bytes of 33292288 available flash (0.25%)
+Used 621824 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1176  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c14 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149524 bytes into 83688 bytes
+Code CheckSum= fc2a9c22
+Struct CheckSum= c6271f30
+S records output with a base address of c0040000
+S records output with a final address of c0054700
+About to write S7...
+******************************Build summary ******************************
+Used 83712 bytes of 33292288 available flash (0.25%)
+Used 621824 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 882  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:99: error: 'Replace_Center_Line' was not declared in this scope
+..\Netburner_OSD.cpp:100: error: 'Replace_Top_Line' was not declared in this scope
+..\Netburner_OSD.cpp:101: error: 'Replace_Bottom_Line' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 369  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+Netburner_OSD.o: In function `UserMain':
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:99: undefined reference to `Replace_Center_Line'
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:100: undefined reference to `Replace_Top_Line'
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:101: undefined reference to `Replace_Bottom_Line'
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 764  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(uint8_t)':
+..\OSD_Functions.cpp:159: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(uint8_t)':
+..\OSD_Functions.cpp:163: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(uint8_t)':
+..\OSD_Functions.cpp:167: warning: unused variable 'y'
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c84 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149636 bytes into 83772 bytes
+Code CheckSum= 26ced09b
+Struct CheckSum= 9b82e9f3
+S records output with a base address of c0040000
+S records output with a final address of c0054754
+About to write S7...
+******************************Build summary ******************************
+Used 83796 bytes of 33292288 available flash (0.25%)
+Used 621936 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 918  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:161: error: 'x' was not declared in this scope
+..\OSD_Functions.cpp:159: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:176: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:180: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 274  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:161: error: 'x' was not declared in this scope
+..\OSD_Functions.cpp:159: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:176: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:180: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 252  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:159: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:165: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:169: warning: unused variable 'y'
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:97: error: 'OSD_DOUT' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 543  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cd4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149716 bytes into 83849 bytes
+Code CheckSum= a5444481
+Struct CheckSum= 1d0d7570
+S records output with a base address of c0040000
+S records output with a final address of c00547a1
+About to write S7...
+******************************Build summary ******************************
+Used 83873 bytes of 33292288 available flash (0.25%)
+Used 622016 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 852  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cd4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149716 bytes into 83852 bytes
+Code CheckSum= 8ee718e0
+Struct CheckSum= 336aa10e
+S records output with a base address of c0040000
+S records output with a final address of c00547a4
+About to write S7...
+******************************Build summary ******************************
+Used 83876 bytes of 33292288 available flash (0.25%)
+Used 622016 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1112  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024d04 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149764 bytes into 83957 bytes
+Code CheckSum= 393b6f42
+Struct CheckSum= 89164a13
+S records output with a base address of c0040000
+S records output with a final address of c005480d
+About to write S7...
+******************************Build summary ******************************
+Used 83981 bytes of 33292288 available flash (0.25%)
+Used 622064 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 822  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024d24 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149796 bytes into 83918 bytes
+Code CheckSum= c4e239c9
+Struct CheckSum= fd6f7f93
+S records output with a base address of c0040000
+S records output with a final address of c00547e6
+About to write S7...
+******************************Build summary ******************************
+Used 83942 bytes of 33292288 available flash (0.25%)
+Used 622096 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 982  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cc4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149700 bytes into 83771 bytes
+Code CheckSum= 6f33bc08
+Struct CheckSum= 531dfe47
+S records output with a base address of c0040000
+S records output with a final address of c0054753
+About to write S7...
+******************************Build summary ******************************
+Used 83795 bytes of 33292288 available flash (0.25%)
+Used 622000 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 853  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cc4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149700 bytes into 83767 bytes
+Code CheckSum= e8e4db54
+Struct CheckSum= d96cdeff
+S records output with a base address of c0040000
+S records output with a final address of c005474f
+About to write S7...
+******************************Build summary ******************************
+Used 83791 bytes of 33292288 available flash (0.25%)
+Used 622000 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 810  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024d04 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149764 bytes into 83917 bytes
+Code CheckSum= bfaa74d0
+Struct CheckSum= 2a744ad
+S records output with a base address of c0040000
+S records output with a final address of c00547e5
+About to write S7...
+******************************Build summary ******************************
+Used 83941 bytes of 33292288 available flash (0.25%)
+Used 622064 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 841  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cf4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149748 bytes into 83861 bytes
+Code CheckSum= 45947cd9
+Struct CheckSum= 7cbd3cec
+S records output with a base address of c0040000
+S records output with a final address of c00547ad
+About to write S7...
+******************************Build summary ******************************
+Used 83885 bytes of 33292288 available flash (0.25%)
+Used 622048 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 816  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cf4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149748 bytes into 83831 bytes
+Code CheckSum= 1632e051
+Struct CheckSum= ac1ed992
+S records output with a base address of c0040000
+S records output with a final address of c005478f
+About to write S7...
+******************************Build summary ******************************
+Used 83855 bytes of 33292288 available flash (0.25%)
+Used 622048 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 883  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024cf4 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149748 bytes into 83853 bytes
+Code CheckSum= 2a83896b
+Struct CheckSum= 97ce3062
+S records output with a base address of c0040000
+S records output with a final address of c00547a5
+About to write S7...
+******************************Build summary ******************************
+Used 83877 bytes of 33292288 available flash (0.25%)
+Used 622048 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 842  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:56: warning: unused variable 'OSD_DOUT'
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c84 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149636 bytes into 83790 bytes
+Code CheckSum= 86f9f55b
+Struct CheckSum= 3b57c521
+S records output with a base address of c0040000
+S records output with a final address of c0054766
+About to write S7...
+******************************Build summary ******************************
+Used 83814 bytes of 33292288 available flash (0.25%)
+Used 621936 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 848  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+..\Netburner_OSD.cpp: In function 'void UserMain(void*)':
+..\Netburner_OSD.cpp:56: warning: unused variable 'OSD_DOUT'
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024be4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 149476 bytes into 83657 bytes
+Code CheckSum= 6f17aba3
+Struct CheckSum= 533a0ffe
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 621776 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 824  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024be4 
+Block size= 145K
+Execution starts at 40000400 
+compressed 149476 bytes into 83657 bytes
+Code CheckSum= 6f17aba3
+Struct CheckSum= 533a0ffe
+S records output with a base address of c0040000
+S records output with a final address of c00546e1
+About to write S7...
+******************************Build summary ******************************
+Used 83681 bytes of 33292288 available flash (0.25%)
+Used 621776 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 845  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c44 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149572 bytes into 83826 bytes
+Code CheckSum= abac2e5d
+Struct CheckSum= 16a58c3b
+S records output with a base address of c0040000
+S records output with a final address of c005478a
+About to write S7...
+******************************Build summary ******************************
+Used 83850 bytes of 33292288 available flash (0.25%)
+Used 621872 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 825  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:159: warning: unused variable 'y'
+..\OSD_Functions.cpp:162: warning: unused variable 'H_Add'
+..\OSD_Functions.cpp:163: warning: unused variable 'L_Add'
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:169: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40024c44 
+Block size= 146K
+Execution starts at 40000400 
+compressed 149572 bytes into 83826 bytes
+Code CheckSum= abac2e5d
+Struct CheckSum= 16a58c3b
+S records output with a base address of c0040000
+S records output with a final address of c005478a
+About to write S7...
+******************************Build summary ******************************
+Used 83850 bytes of 33292288 available flash (0.25%)
+Used 621872 bytes of 67108095 available ram (0.93%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 998  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:162: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:169: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 265  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Display_Center(uint8_t)':
+..\OSD_Functions.cpp:106: warning: comparison is always false due to limited range of data type
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 249  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Display_Center(uint8_t)':
+..\OSD_Functions.cpp:106: warning: comparison is always false due to limited range of data type
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 499  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Display_Center(uint8_t)':
+..\OSD_Functions.cpp:106: warning: comparison is always false due to limited range of data type
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 265  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 250  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp:36:30: error: ReplaceCharacter.h: No such file or directory
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 266  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp:36:30: error: ReplaceCharacter.h: No such file or directory
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 250  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp:36:30: error: ReplaceCharacter.h: No such file or directory
+..\OSD_Functions.cpp: In function 'void Replace_Center_Line(int8_t)':
+..\OSD_Functions.cpp:166: error: 'Remove_Center_Line' was not declared in this scope
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 484  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp:36:30: error: ReplaceCharacter.h: No such file or directory
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:173: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:177: warning: unused variable 'y'
+Build error occurred, build is stopped
+Time consumed: 249  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:172: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:176: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+Netburner_OSD.o: In function `UserMain':
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:79: undefined reference to `Display_Center_Line'
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:80: undefined reference to `Display_Top_Line'
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD\Release/..\Netburner_OSD.cpp:83: undefined reference to `Display_Bottom_Line'
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 624  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:172: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:176: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023514 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143636 bytes into 83240 bytes
+Code CheckSum= a88d893a
+Struct CheckSum= 19c44ad8
+S records output with a base address of c0040000
+S records output with a final address of c0054540
+About to write S7...
+******************************Build summary ******************************
+Used 83264 bytes of 33292288 available flash (0.25%)
+Used 615936 bytes of 67108095 available ram (0.92%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 951  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:174: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:178: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023624 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143908 bytes into 83276 bytes
+Code CheckSum= 3ee866bb
+Struct CheckSum= 83696c23
+S records output with a base address of c0040000
+S records output with a final address of c0054564
+About to write S7...
+******************************Build summary ******************************
+Used 83300 bytes of 33292288 available flash (0.25%)
+Used 616208 bytes of 67108095 available ram (0.92%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 936  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:174: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:178: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40023624 
+Block size= 140K
+Execution starts at 40000400 
+compressed 143908 bytes into 83276 bytes
+Code CheckSum= 3ee866bb
+Struct CheckSum= 83696c23
+S records output with a base address of c0040000
+S records output with a final address of c0054564
+About to write S7...
+******************************Build summary ******************************
+Used 83300 bytes of 33292288 available flash (0.25%)
+Used 616208 bytes of 67108095 available ram (0.92%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 796  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:326: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:330: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400236b4 
+Block size= 140K
+Execution starts at 40000400 
+compressed 144052 bytes into 83344 bytes
+Code CheckSum= 72cc08c5
+Struct CheckSum= 4f85c945
+S records output with a base address of c0040000
+S records output with a final address of c00545a8
+About to write S7...
+******************************Build summary ******************************
+Used 83368 bytes of 33292288 available flash (0.25%)
+Used 616352 bytes of 67108095 available ram (0.92%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 1045  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
+..\OSD_Functions.cpp: In function 'void Replace_Top_Line(int8_t)':
+..\OSD_Functions.cpp:326: warning: unused variable 'y'
+..\OSD_Functions.cpp: In function 'void Replace_Bottom_Line(int8_t)':
+..\OSD_Functions.cpp:330: warning: unused variable 'y'
+m68k-elf-g++ PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
+m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
+compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400238f4 
+Block size= 141K
+Execution starts at 40000400 
+compressed 144628 bytes into 83589 bytes
+Code CheckSum= 7d4b1b40
+Struct CheckSum= 4506b395
+S records output with a base address of c0040000
+S records output with a final address of c005469d
+About to write S7...
+******************************Build summary ******************************
+Used 83613 bytes of 33292288 available flash (0.25%)
+Used 616928 bytes of 67108095 available ram (0.92%)
+NNDK release tag version:2.6.7
+Build complete for project Netburner_OSD
+Time consumed: 956  ms.  
+
+**** Build of configuration Release for project Netburner_OSD ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for Netburner_OSD
