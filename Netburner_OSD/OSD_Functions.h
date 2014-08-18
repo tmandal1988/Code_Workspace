@@ -28,7 +28,10 @@ void Display_Bottom_Line(uint16_t x);
 void Replace_Center_Line(int8_t i);
 void Replace_Top_Line(int8_t i);
 void Replace_Bottom_Line(int8_t i);
-
+void Remove_Center_Line(uint16_t x);
+void Remove_Top_Line(uint16_t x);
+void Remove_Bottom_Line(uint16_t x);
+void Replace_Character(uint8_t Char_Add);
 
 #ifdef __cplusplus
 }

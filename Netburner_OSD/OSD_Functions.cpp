@@ -61,7 +61,7 @@ void initOSD(){
 	/*******************replacing 0x0C charcter************************/
 	//ReplaceCharacter(0xC0);//Center Circle
 	//ReplaceCharacter(0xC1);//Vertical Line
-	//ReplaceCharacter(0xC2);//Horizontal Line
+	//ReplaceCharacter(0x89);//Horizontal Line
 
 }
 
@@ -102,88 +102,154 @@ void OSD_Position_H(uint8_t H_Add){
 
 void Display_Center(uint16_t x){
 
-	if(x >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(x,0xC0);
+	uint8_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;;
 
-	if((x-1) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(x-1,0xC2);
+	pixel_row=x / 30;
+	column_no=x % 30;
+	actual_row=pixel_row / 17;
+	bar_no= pixel_row % 17;
 
-	if((x+1) >=255)
+	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
+	uint8_t Disp_Char=128+bar_no;
+
+	if(Disp_Add >=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+1,0xC2);
+	DisplayCharacter(Disp_Add,0xC0);
+
+	if((Disp_Add-1) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-1,Disp_Char);
+
+	if((Disp_Add+1) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+1,Disp_Char);
 }
 
 void Display_Center_Line(uint16_t x){
 
-	if((x+7)>=255)
+	uint8_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;;
+
+	pixel_row=x / 30;
+	column_no=x % 30;
+	actual_row=pixel_row / 17;
+	bar_no= pixel_row % 17;
+
+	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
+	uint8_t Disp_Char=128+bar_no;
+
+	if((Disp_Add+3)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+7,0xC2);
+	DisplayCharacter(Disp_Add+3,Disp_Char);
 
-	if((x+8)>=255)
+	if((Disp_Add+4)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+8,0xC2);
+	DisplayCharacter(Disp_Add+4,Disp_Char);
 
-	if((x+9)>=255)
+	if((Disp_Add+5)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+9,0xC2);
+	DisplayCharacter(Disp_Add+5,Disp_Char);
 
-	if((x+10)>=255)
+	if((Disp_Add+6)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+10,0xC2);
+	DisplayCharacter(Disp_Add+6,Disp_Char);
 
-	if((x+11)>=255)
+	if((Disp_Add+7)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+7,Disp_Char);
 
-	DisplayCharacter(x+11,0xC2);
-
-
-	if((x-7) >=255)
+	if((Disp_Add+8)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-7,0xC2);
+	DisplayCharacter(Disp_Add+8,Disp_Char);
 
-	if((x-8) >=255)
+	if((Disp_Add+9)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-8,0xC2);
+	DisplayCharacter(Disp_Add+9,Disp_Char);
 
-	if((x-9) >=255)
+	if((Disp_Add+10)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-9,0xC2);
+	DisplayCharacter(Disp_Add+10,Disp_Char);
 
-	if((x-10) >=255)
+	if((Disp_Add+11)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-10,0xC2);
+	DisplayCharacter(Disp_Add+11,Disp_Char);
 
-	if((x-11) >=255)
+	if((Disp_Add-3)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-11,0xC2);
+	DisplayCharacter(Disp_Add-3,Disp_Char);
+
+	if((Disp_Add-4)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-4,Disp_Char);
+
+	if((Disp_Add-5)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-5,Disp_Char);
+
+	if((Disp_Add-6)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-6,Disp_Char);
+
+	if((Disp_Add-7) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-7,Disp_Char);
+
+	if((Disp_Add-8) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-8,Disp_Char);
+
+	if((Disp_Add-9) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-9,Disp_Char);
+
+	if((Disp_Add-10) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-10,Disp_Char);
+
+	if((Disp_Add-11) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-11,Disp_Char);
 }
 
 void Display_Top_Line(uint16_t x){
@@ -192,7 +258,7 @@ void Display_Top_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+7-90,0xC2);
+	DisplayCharacter(x+7-90,0x89);
 
 	if((x+8-90)>=255)
 		OSD_Position_H(0x01);
@@ -204,7 +270,7 @@ void Display_Top_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+9-90,0xC2);
+	DisplayCharacter(x+9-90,0x89);
 
 	if((x+10-90)>=255)
 		OSD_Position_H(0x01);
@@ -216,13 +282,13 @@ void Display_Top_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+11-90,0xC2);
+	DisplayCharacter(x+11-90,0x89);
 
 	if((x-7-90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-7-90,0xC2);
+	DisplayCharacter(x-7-90,0x89);
 
 	if((x-8-90)>=255)
 		OSD_Position_H(0x01);
@@ -234,7 +300,7 @@ void Display_Top_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-9-90,0xC2);
+	DisplayCharacter(x-9-90,0x89);
 
 	if((x-10-90)>=255)
 		OSD_Position_H(0x01);
@@ -246,7 +312,7 @@ void Display_Top_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-11-90,0xC2);
+	DisplayCharacter(x-11-90,0x89);
 }
 
 void Display_Bottom_Line(uint16_t x){
@@ -255,37 +321,37 @@ void Display_Bottom_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+7+90,0xC2);
+	DisplayCharacter(x+7+90,0x89);
 
-	if((x+7+90)>=255)
+	if((x+8+90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
 	DisplayCharacter(x+8+90,0x00);
 
-	if((x+7+90)>=255)
+	if((x+9+90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+9+90,0xC2);
+	DisplayCharacter(x+9+90,0x89);
 
-	if((x+7+90)>=255)
+	if((x+10+90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
 	DisplayCharacter(x+10+90,0x00);
 
-	if((x+7+90)>=255)
+	if((x+11+90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x+11+90,0xC2);
+	DisplayCharacter(x+11+90,0x89);
 
 	if((x-7+90)>=255)
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-7+90,0xC2);
+	DisplayCharacter(x-7+90,0x89);
 
 	if((x-8+90)>=255)
 		OSD_Position_H(0x01);
@@ -297,7 +363,7 @@ void Display_Bottom_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-9+90,0xC2);
+	DisplayCharacter(x-9+90,0x89);
 
 	if((x-10+90)>=255)
 		OSD_Position_H(0x01);
@@ -309,23 +375,286 @@ void Display_Bottom_Line(uint16_t x){
 		OSD_Position_H(0x01);
 	else
 		OSD_Position_H(0x00);
-	DisplayCharacter(x-11+90,0xC2);
+	DisplayCharacter(x-11+90,0x89);
+}
+
+void Remove_Center_Line(uint16_t x){
+
+	uint8_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;;
+
+	pixel_row=x / 30;
+	column_no=x % 30;
+	actual_row=pixel_row / 17;
+	//bar_no= pixel_row % 17;
+
+	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
+	//uint8_t Disp_Char=128+bar_no;
+
+	if((Disp_Add+3)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+3,0x00);
+
+	if((Disp_Add+4)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+4,0x00);
+
+	if((Disp_Add+5)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+5,0x00);
+
+	if((Disp_Add+6)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+6,0x00);
+
+
+	if((Disp_Add+7)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+7,0x00);
+
+	if((Disp_Add+8)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+8,0x00);
+
+	if((Disp_Add+9)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+9,0x00);
+
+	if((Disp_Add+10)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+10,0x00);
+
+	if((Disp_Add+11)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add+11,0x00);
+
+
+	if((Disp_Add-3)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-3,0x00);
+
+	if((Disp_Add-4)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-4,0x00);
+
+	if((Disp_Add-5)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-5,0x00);
+
+	if((Disp_Add-6)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-6,0x00);
+
+
+	if((Disp_Add-7) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-7,0x00);
+
+	if((Disp_Add-8) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-8,0x00);
+
+	if((Disp_Add-9) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-9,0x00);
+
+	if((Disp_Add-10) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-10,0x00);
+
+	if((Disp_Add-11) >=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(Disp_Add-11,0x00);
+}
+
+void Remove_Top_Line(uint16_t x){
+	if((x+7-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+7-90,0x00);
+
+	if((x+8-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+8-90,0x00);
+
+	if((x+9-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+9-90,0x00);
+
+	if((x+10-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+10-90,0x00);
+
+	if((x+11-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+11-90,0x00);
+
+	if((x-7-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-7-90,0x00);
+
+	if((x-8-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-8-90,0x00);
+
+	if((x-9-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-9-90,0x00);
+
+	if((x-10-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-10-90,0x00);
+
+	if((x-11-90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-11-90,0x00);
+}
+
+void Remove_Bottom_Line(uint16_t x){
+	if((x+7+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+7+90,0x00);
+
+	if((x+8+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+8+90,0x00);
+
+	if((x+9+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+9+90,0x00);
+
+	if((x+10+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+10+90,0x00);
+
+	if((x+11+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x+11+90,0x00);
+
+	if((x-7+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-7+90,0x00);
+
+	if((x-8+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-8+90,0x00);
+
+	if((x-9+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-9+90,0x00);
+
+	if((x-10+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-10+90,0x00);
+
+	if((x-11+90)>=255)
+		OSD_Position_H(0x01);
+	else
+		OSD_Position_H(0x00);
+	DisplayCharacter(x-11+90,0x00);
+
 }
 
 void Replace_Center_Line(int8_t i){
-	static int y=194;
-	uint8_t x=194+i*30;
+	static int y=2834;
+	uint16_t x=2834+i*30;
 
-	//Remove_Center_Line(y);
-	//Display_Center_Line(x);
+	Remove_Center_Line(y);
+	Display_Center_Line(x);
 
 	y=x;
 }
 
 void Replace_Top_Line(int8_t i){
-	static int y=194;
+	static int y=194-90;
+	uint16_t x=194+i*30;
+
+	Remove_Top_Line(y);
+	Display_Top_Line(x);
+
+	y=x;
 }
 
 void Replace_Bottom_Line(int8_t i){
-	static int y=194;
+	static int y=194+90;
+	uint16_t x=194+i*30;
+
+	Remove_Bottom_Line(y);
+	Display_Bottom_Line(x);
+
+	y=x;
 }
+
+

@@ -1,7 +1,7 @@
 /*
  * ReplaceCharacter.h
  *
- *  Created on: Aug 14, 2014
+ *  Created on: Aug 18, 2014
  *      Author: Tanmay
  */
 
@@ -15,8 +15,9 @@ extern "C"
 {
 #endif
 
-void ReplaceCharacter(uint8_t C_Add);
+void initOSD(void);
 
+void Replace_Character(uint8_t Char_Add);
 
 #ifdef __cplusplus
 }

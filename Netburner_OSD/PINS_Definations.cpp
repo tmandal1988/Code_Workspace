@@ -16,6 +16,10 @@ void initPINS()
 	J2[27].function(1);//SPI1 DIN
 	J2[28].function(1);//SPI1 DOUT
 	J2[30].function(1);// SPI1 CS0
+
+	J2[32].function(0);//OSD Reset
+
+	J2[32]=0;
 }
 
 
