@@ -110,7 +110,7 @@ void Display_Center(uint16_t x){
 	bar_no= pixel_row % 17;
 
 	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
-	uint8_t Disp_Char=128+bar_no;
+	uint8_t Disp_Char=0xC2;
 
 	if(Disp_Add >=255)
 		OSD_Position_H(0x01);
@@ -131,125 +131,36 @@ void Display_Center(uint16_t x){
 	DisplayCharacter(Disp_Add+1,Disp_Char);
 }
 
-void Display_Center_Line(uint16_t x){
+void Display_Center_Line(uint16_t x,int8_t roll){
 
-	uint8_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;;
+	roll=roll*0.33;
+	int16_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;
+	uint16_t Disp_Add=0;
+	uint8_t Disp_Char=0;
 
-	pixel_row=x / 30;
-	column_no=x % 30;
-	actual_row=pixel_row / 17;
-	bar_no= pixel_row % 17;
 
-	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
-	uint8_t Disp_Char=128+bar_no;
+	for (int i=-9;i<10;i++){
 
-	if((Disp_Add+3)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+3,Disp_Char);
+		pixel_row=(x+i*30*roll) / 30;
+		if(pixel_row>-1){
+			column_no=(x+i*30*roll) % 30;
+			actual_row=pixel_row / 17;
+			bar_no= pixel_row % 17;
 
-	if((Disp_Add+4)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+4,Disp_Char);
+			Disp_Add=30*actual_row+29+(column_no+1);
+			Disp_Char=128+bar_no;
 
-	if((Disp_Add+5)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+5,Disp_Char);
+			if(Disp_Add< 480){
+				if ((Disp_Add+i)>255)
+					OSD_Position_H(0x01);
+				else
+					OSD_Position_H(0x00);
+				DisplayCharacter(Disp_Add+i,Disp_Char);//////////////////Center Line
+				//printf("%d------>%d------->Pixel_row=%d\n",i,Disp_Add+i,pixel_row);
+			}
+		}
+	}
 
-	if((Disp_Add+6)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+6,Disp_Char);
-
-	if((Disp_Add+7)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+7,Disp_Char);
-
-	if((Disp_Add+8)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+8,Disp_Char);
-
-	if((Disp_Add+9)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+9,Disp_Char);
-
-	if((Disp_Add+10)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+10,Disp_Char);
-
-	if((Disp_Add+11)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+11,Disp_Char);
-
-	if((Disp_Add-3)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-3,Disp_Char);
-
-	if((Disp_Add-4)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-4,Disp_Char);
-
-	if((Disp_Add-5)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-5,Disp_Char);
-
-	if((Disp_Add-6)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-6,Disp_Char);
-
-	if((Disp_Add-7) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-7,Disp_Char);
-
-	if((Disp_Add-8) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-8,Disp_Char);
-
-	if((Disp_Add-9) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-9,Disp_Char);
-
-	if((Disp_Add-10) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-10,Disp_Char);
-
-	if((Disp_Add-11) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-11,Disp_Char);
 }
 
 void Display_Top_Line(uint16_t x){
@@ -378,128 +289,36 @@ void Display_Bottom_Line(uint16_t x){
 	DisplayCharacter(x-11+90,0x89);
 }
 
-void Remove_Center_Line(uint16_t x){
-
-	uint8_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;;
-
-	pixel_row=x / 30;
-	column_no=x % 30;
-	actual_row=pixel_row / 17;
-	//bar_no= pixel_row % 17;
-
-	uint16_t Disp_Add=30*actual_row+29+(column_no+1);
-	//uint8_t Disp_Char=128+bar_no;
-
-	if((Disp_Add+3)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+3,0x00);
-
-	if((Disp_Add+4)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+4,0x00);
-
-	if((Disp_Add+5)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+5,0x00);
-
-	if((Disp_Add+6)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+6,0x00);
+void Remove_Center_Line(uint16_t x,int8_t roll){
 
 
-	if((Disp_Add+7)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+7,0x00);
-
-	if((Disp_Add+8)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+8,0x00);
-
-	if((Disp_Add+9)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+9,0x00);
-
-	if((Disp_Add+10)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+10,0x00);
-
-	if((Disp_Add+11)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add+11,0x00);
+	roll=roll*0.33;
+	int16_t pixel_row=0,column_no=0,bar_no=0,actual_row=0;
+	uint16_t Disp_Add=0;
+	uint8_t Disp_Char=0;
 
 
-	if((Disp_Add-3)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-3,0x00);
+	for (int i=-9;i<10;i++){
 
-	if((Disp_Add-4)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-4,0x00);
+		pixel_row=(x+i*30*roll) / 30;
+		if(pixel_row>-1){
+			column_no=(x+i*30*roll) % 30;
+			actual_row=pixel_row / 17;
+			bar_no= pixel_row % 17;
 
-	if((Disp_Add-5)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-5,0x00);
+			Disp_Add=30*actual_row+29+(column_no+1);
+			Disp_Char=128+bar_no;
 
-	if((Disp_Add-6)>=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-6,0x00);
-
-
-	if((Disp_Add-7) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-7,0x00);
-
-	if((Disp_Add-8) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-8,0x00);
-
-	if((Disp_Add-9) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-9,0x00);
-
-	if((Disp_Add-10) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-10,0x00);
-
-	if((Disp_Add-11) >=255)
-		OSD_Position_H(0x01);
-	else
-		OSD_Position_H(0x00);
-	DisplayCharacter(Disp_Add-11,0x00);
+			if(Disp_Add< 480){
+				if ((Disp_Add+i)>255)
+					OSD_Position_H(0x01);
+				else
+					OSD_Position_H(0x00);
+				DisplayCharacter(Disp_Add+i,0x00);//////////////////Center Line
+				//printf("%d------>%d------->Pixel_row=%d\n",i,Disp_Add+i,pixel_row);
+			}
+		}
+	}
 }
 
 void Remove_Top_Line(uint16_t x){
@@ -627,14 +446,19 @@ void Remove_Bottom_Line(uint16_t x){
 
 }
 
-void Replace_Center_Line(int8_t i){
-	static int y=2834;
+void Replace_Center_Line(int8_t i, int8_t j){
+	static int y_pitch=2834;
+	static int y_roll=0;
+
 	uint16_t x=2834+i*30;
 
-	Remove_Center_Line(y);
-	Display_Center_Line(x);
+	Remove_Center_Line(y_pitch,y_roll);
+	Display_Center_Line(x,j);
+	Display_Center(2834);
 
-	y=x;
+	y_pitch=x;
+	y_roll=j;
+
 }
 
 void Replace_Top_Line(int8_t i){
@@ -643,6 +467,8 @@ void Replace_Top_Line(int8_t i){
 
 	Remove_Top_Line(y);
 	Display_Top_Line(x);
+
+
 
 	y=x;
 }

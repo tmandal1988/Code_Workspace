@@ -40,7 +40,7 @@ extern "C"{
 	void UserMain( void * pd);
 }
 
-const char *AppName = "Netburner OSD v4";
+const char *AppName = "Netburner OSD v5";
 
 /*****************************UserMain***************************************************/
 void UserMain( void* pd ){
@@ -80,8 +80,9 @@ void UserMain( void* pd ){
 
 	uint16_t x=2834;
 	//OSD_Position_H(0x00);
-
 	Display_Center(x);
+	OSD_Position_H(0x01);
+	//DisplayCharacter(550,0xC0);
 	//Display_Center_Line(x);
 	//Display_Top_Line(x);
 
@@ -90,15 +91,18 @@ void UserMain( void* pd ){
 
 	OSTimeDly(2);
 
+	int j=-90;
 	while(1){
-
-		for (int i=-100;i<100;i++){
-
-			//printf("%d\n",i);
-			Replace_Center_Line(i);
-			OSTimeDly(1);
-
+		for (int i=-90;i<91;i=i+20){
+			j=-90;
+			while (j<91){
+				Replace_Center_Line(i,j);
+				//printf("%d,%d\n",i,j);
+				OSTimeDly(2);
+				j=j+10;
+			}
 		}
 	}
+
 
 }
