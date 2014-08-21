@@ -40,7 +40,7 @@ extern "C"{
 	void UserMain( void * pd);
 }
 
-const char *AppName = "Netburner OSD v5";
+const char *AppName = "Netburner OSD v6";
 
 /*****************************UserMain***************************************************/
 void UserMain( void* pd ){
@@ -75,14 +75,16 @@ void UserMain( void* pd ){
 	//ReplaceCharacter(0xC1);//Vertical Line
 	//ReplaceCharacter(0xC2);//Horizontal Line
 	//Replace_Character(0x91);
+	//Replace_Character(0x50);
 
 	/***********************************Initializing Initial Artificial Horizon*****************************************************************/
 
 	uint16_t x=2834;
 	//OSD_Position_H(0x00);
+	//Enable_OSD();
 	Display_Center(x);
-	OSD_Position_H(0x01);
-	//DisplayCharacter(550,0xC0);
+	Display_Data();
+	//DisplayCharacter(0,0x61);
 	//Display_Center_Line(x);
 	//Display_Top_Line(x);
 
@@ -91,15 +93,25 @@ void UserMain( void* pd ){
 
 	OSTimeDly(2);
 
-	int j=-90;
+	//int j=60;
+	//int i=0;
+
+	//Display_Roll(j);
+	//Display_Pitch(i);
+	//Replace_Center_Line(i,j);
+
+	int j=0;
 	while(1){
-		for (int i=-90;i<91;i=i+20){
-			j=-90;
-			while (j<91){
+		for (int i=-60;i<61;i=i+5){
+			j=-60;
+		while (j<61){
+				Display_Roll(j);
+				Display_Pitch(i);
 				Replace_Center_Line(i,j);
+
 				//printf("%d,%d\n",i,j);
 				OSTimeDly(2);
-				j=j+10;
+				j=j+1;
 			}
 		}
 	}

@@ -133,7 +133,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -157,7 +157,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -181,7 +181,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -205,7 +205,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -229,7 +229,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -245,7 +245,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =234;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -253,7 +253,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =170;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -261,7 +261,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =175;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -277,7 +277,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -301,7 +301,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -325,7 +325,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -349,7 +349,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -373,7 +373,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =239;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -461,7 +461,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =170;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -469,7 +469,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =170;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -477,7 +477,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =170;
+	OSD_DOUT[0]=0x0B;OSD_DOUT[1] =255;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -488,4 +488,6 @@ void Replace_Character(uint8_t Char_Add){
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
 	OSTimeDly(5);
+
+	Enable_OSD();
 }

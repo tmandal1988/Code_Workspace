@@ -23,15 +23,12 @@ void Enable_OSD(void);
 void OSD_Position_H(uint8_t H_Add);
 void Display_Center(uint16_t x);
 void Display_Center_Line(uint16_t x,int8_t roll);
-void Display_Top_Line(uint16_t x);
-void Display_Bottom_Line(uint16_t x);
 void Replace_Center_Line(int8_t i,int8_t roll);
-void Replace_Top_Line(int8_t i);
-void Replace_Bottom_Line(int8_t i);
 void Remove_Center_Line(uint16_t x,int8_t roll);
-void Remove_Top_Line(uint16_t x);
-void Remove_Bottom_Line(uint16_t x);
 void Replace_Character(uint8_t Char_Add);
+void Display_Data(void);
+void Display_Roll(int8_t roll);
+void Display_Pitch(int8_t pitch);
 
 #ifdef __cplusplus
 }
