@@ -41,14 +41,14 @@ void Replace_Character(uint8_t Char_Add){
 	BYTE OSD_Disable[2]={0x00,0x00};
 	BYTE OSD_DOUT[2]={0};
 
-	DSPIStart(1,OSD_Disable,NULL,2,NULL);//Disable display of OSD image you need to do it before replacing any character
+	DSPIStart(1,OSD_Disable,NULL,2,NULL);//Disable display of OSD image
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
 	OSD_DOUT[0]=0x09;OSD_DOUT[1] =Char_Add;
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Character to replace
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	//Send 54 Bytes////////////////   individual pixel values for 54 pixels
+	//Send 54 Bytes////////////////
 	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =0;//Pixel value
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish

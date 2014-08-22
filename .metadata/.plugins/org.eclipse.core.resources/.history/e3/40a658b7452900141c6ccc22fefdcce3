@@ -41,15 +41,15 @@ void Replace_Character(uint8_t Char_Add){
 	BYTE OSD_Disable[2]={0x00,0x00};
 	BYTE OSD_DOUT[2]={0};
 
-	DSPIStart(1,OSD_Disable,NULL,2,NULL);//Disable display of OSD image you need to do it before replacing any character
+	DSPIStart(1,OSD_Disable,NULL,2,NULL);//Disable display of OSD image
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
 	OSD_DOUT[0]=0x09;OSD_DOUT[1] =Char_Add;
-	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Character to replace
+	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//DMAL
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	//Send 54 Bytes////////////////   individual pixel values for 54 pixels
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =0;//Pixel value
+	//Send 54 Bytes////////////////
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =0;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -57,7 +57,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =1;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =1;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -65,7 +65,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =2;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =2;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -73,7 +73,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =3;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =3;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -81,7 +81,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =4;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =4;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -89,7 +89,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =5;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =5;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -97,7 +97,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =6;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =6;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -105,7 +105,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =7;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =7;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -113,7 +113,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =8;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =8;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -121,7 +121,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =9;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =9;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -129,7 +129,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =10;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =10;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -137,7 +137,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =11;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =11;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -145,7 +145,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =12;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =12;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -153,7 +153,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =13;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =13;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -161,7 +161,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =14;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =14;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -169,7 +169,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =15;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =15;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -177,7 +177,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =16;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =16;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -185,7 +185,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =17;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =17;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -193,7 +193,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =18;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =18;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -201,7 +201,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =19;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =19;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -209,7 +209,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =20;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =20;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -217,7 +217,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =21;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =21;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -225,7 +225,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =22;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =22;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -233,7 +233,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =23;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =23;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -241,7 +241,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =24;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =24;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -249,7 +249,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =25;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =25;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -257,7 +257,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =26;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =26;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -265,7 +265,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =27;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =27;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -273,7 +273,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =28;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =28;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -281,7 +281,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =29;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =29;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -289,7 +289,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =30;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =30;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -297,7 +297,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =31;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =31;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -305,7 +305,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =32;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =32;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -313,7 +313,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =33;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =33;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -321,7 +321,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =34;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =34;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -329,7 +329,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =35;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =35;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -337,7 +337,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =36;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =36;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -345,7 +345,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =37;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =37;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -353,7 +353,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =38;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =38;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -361,7 +361,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =39;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =39;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -369,7 +369,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =40;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =40;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -377,7 +377,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =41;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =41;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -385,7 +385,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =42;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =42;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -393,7 +393,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =43;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =43;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -401,7 +401,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =44;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =44;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -409,7 +409,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =45;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =45;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -417,7 +417,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =46;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =46;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -425,7 +425,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =47;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =47;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -433,7 +433,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =48;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =48;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -441,7 +441,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =49;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =49;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -449,7 +449,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =50;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =50;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -457,7 +457,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =51;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =51;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -465,7 +465,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =52;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =52;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
@@ -473,7 +473,7 @@ void Replace_Character(uint8_t Char_Add){
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 
-	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =53;//Pixel value
+	OSD_DOUT[0]=0x0A;OSD_DOUT[1] =53;//Character to replace
 	DSPIStart(1,OSD_DOUT,NULL,2,NULL);//Send Data
 	while(!DSPIdone(1)){};//wait for DSPI to finish
 

@@ -2,23 +2,23 @@
 **** Build of configuration Release for project Netburner_OSD ****
 
 **** Internal Builder is used for build               ****
-m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Netburner_OSD.o ..\Netburner_OSD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Netburner_OSD -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o OSD_Functions.o ..\OSD_Functions.cpp
 m68k-elf-g++ ReplaceCharacter.o PINS_Definations.o OSD_Functions.o Netburner_OSD.o -Wl,-Map=Netburner_OSD.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oNetburner_OSD.elf
 m68k-elf-objcopy Netburner_OSD.elf --strip-all --output-target=srec Netburner_OSD.s19
 compcode Netburner_OSD.s19 Netburner_OSD_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
 Block starts at 40000400 
-Block ends at 40026864 
+Block ends at 40026854 
 Block size= 153K
 Execution starts at 40000400 
-compressed 156772 bytes into 88433 bytes
-Code CheckSum= e5b8091b
-Struct CheckSum= dc99835e
+compressed 156756 bytes into 88383 bytes
+Code CheckSum= 4a9ab32d
+Struct CheckSum= 77b6d98e
 S records output with a base address of c0040000
-S records output with a final address of c0055989
+S records output with a final address of c0055957
 About to write S7...
 ******************************Build summary ******************************
-Used 88457 bytes of 33292288 available flash (0.27%)
-Used 629088 bytes of 67108095 available ram (0.94%)
+Used 88407 bytes of 33292288 available flash (0.27%)
+Used 629072 bytes of 67108095 available ram (0.94%)
 NNDK release tag version:2.6.7
 Build complete for project Netburner_OSD
-Time consumed: 1513  ms.  
+Time consumed: 902  ms.  
