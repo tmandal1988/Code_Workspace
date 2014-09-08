@@ -1,0 +1,25 @@
+/*
+ * PINS_Definations.cpp
+ *
+ *  Created on: Aug 13, 2014
+ *      Author: Tanmay
+ */
+
+#include "PINS_Definations.h"
+#include <basictypes.h>
+#include <sim.h>
+#include <pins.h>
+
+void initPINS()
+{
+	/*J2[25].function(1);//SPI1 SCK
+	J2[27].function(1);//SPI1 DIN
+	J2[28].function(1);//SPI1 DOUT
+	J2[30].function(1);// SPI1 CS0
+
+	J2[32].function(0);//OSD Reset
+
+	J2[32]=0;*/
+}
+
+
