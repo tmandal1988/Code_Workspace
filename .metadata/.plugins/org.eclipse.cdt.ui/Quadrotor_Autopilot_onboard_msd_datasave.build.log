@@ -1,0 +1,11 @@
+
+**** Build of configuration Release for project Quadrotor_Autopilot_onboard_msd_datasave ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Quadrotor_Autopilot_onboard_msd_datasave -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Quadrotor_Autopilot_onboard_msd_datasave.o ..\Quadrotor_Autopilot_onboard_msd_datasave.cpp
+m68k-elf-g++ Quadrotor_Autopilot_onboard_msd_datasave.o FileSystemUtils.o Card_Routines.o -Wl,-Map=Quadrotor_Autopilot_onboard_msd_datasave.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oQuadrotor_Autopilot_onboard_msd_datasave.elf
+Quadrotor_Autopilot_onboard_msd_datasave.o: In function `UserMain':
+C:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Quadrotor_Autopilot_onboard_msd_datasave\Release/..\Quadrotor_Autopilot_onboard_msd_datasave.cpp:409: undefined reference to `initPINS'
+collect2: ld returned 1 exit status
+Build error occurred, build is stopped
+Time consumed: 686  ms.  

@@ -1,0 +1,27 @@
+
+**** Rebuild of configuration Release for project GenVI_Netburner ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\GenVI_Netburner -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o GenVI_Netburner.o ..\GenVI_Netburner.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\GenVI_Netburner -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o PINS_Definations.o ..\PINS_Definations.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\GenVI_Netburner -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Card_Routines.o ..\Card_Routines.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\GenVI_Netburner -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o FileSystemUtils.o ..\FileSystemUtils.cpp
+m68k-elf-g++ PINS_Definations.o GenVI_Netburner.o FileSystemUtils.o Card_Routines.o -Wl,-Map=GenVI_Netburner.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oGenVI_Netburner.elf
+m68k-elf-objcopy GenVI_Netburner.elf --strip-all --output-target=srec GenVI_Netburner.s19
+compcode GenVI_Netburner.s19 GenVI_Netburner_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 40039dd4 
+Block size= 230K
+Execution starts at 40000400 
+compressed 235988 bytes into 139974 bytes
+Code CheckSum= 8e9be5d4
+Struct CheckSum= 33b3a7e0
+S records output with a base address of c0040000
+S records output with a final address of c00622de
+About to write S7...
+******************************Build summary ******************************
+Used 139998 bytes of 33292288 available flash (0.42%)
+Used 844384 bytes of 67108095 available ram (1.26%)
+NNDK release tag version:2.6.7
+Build complete for project GenVI_Netburner
+Time consumed: 1970  ms.  

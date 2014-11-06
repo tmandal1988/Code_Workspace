@@ -1,0 +1,47 @@
+
+**** Build of configuration Release for project Read_Receiver_Serial ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IF:\Read_Receiver_Serial -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Read_Receiver_Serial.o ..\Read_Receiver_Serial.cpp
+..\Read_Receiver_Serial.cpp:9:20: error: predef.h: No such file or directory
+..\Read_Receiver_Serial.cpp:12:24: error: basictypes.h: No such file or directory
+..\Read_Receiver_Serial.cpp:13:18: error: ucos.h: No such file or directory
+..\Read_Receiver_Serial.cpp:15:22: error: startnet.h: No such file or directory
+..\Read_Receiver_Serial.cpp:16:24: error: autoupdate.h: No such file or directory
+..\Read_Receiver_Serial.cpp:17:24: error: dhcpclient.h: No such file or directory
+..\Read_Receiver_Serial.cpp:18:21: error: taskmon.h: No such file or directory
+..\Read_Receiver_Serial.cpp:19:23: error: smarttrap.h: No such file or directory
+..\Read_Receiver_Serial.cpp:20:26: error: effs_fat/fat.h: No such file or directory
+..\Read_Receiver_Serial.cpp:21:42: error: effs_fat/multi_drive_mmc_mcf.h: No such file or directory
+..\Read_Receiver_Serial.cpp:22:33: error: effs_fat/effs_utils.h: No such file or directory
+..\Read_Receiver_Serial.cpp:23:17: error: sim.h: No such file or directory
+..\Read_Receiver_Serial.cpp:24:18: error: pins.h: No such file or directory
+..\Read_Receiver_Serial.cpp:25:22: error: ucosmcfc.h: No such file or directory
+..\Read_Receiver_Serial.cpp:26:25: error: pinconstant.h: No such file or directory
+..\Read_Receiver_Serial.cpp:27:24: error: HiResTimer.h: No such file or directory
+..\Read_Receiver_Serial.cpp:28:19: error: utils.h: No such file or directory
+..\Read_Receiver_Serial.cpp:29:23: error: constants.h: No such file or directory
+..\Read_Receiver_Serial.cpp:30:21: error: cfinter.h: No such file or directory
+..\Read_Receiver_Serial.cpp:32:20: error: serial.h: No such file or directory
+..\Read_Receiver_Serial.cpp:33:49: error: dspi.h: No such file or directory
+..\Read_Receiver_Serial.cpp: In function 'void UserMain(void*)':
+..\Read_Receiver_Serial.cpp:45: error: 'InitializeStack' was not declared in this scope
+..\Read_Receiver_Serial.cpp:46: error: 'MAIN_PRIO' was not declared in this scope
+..\Read_Receiver_Serial.cpp:46: error: 'OSChangePrio' was not declared in this scope
+..\Read_Receiver_Serial.cpp:47: error: 'EnableAutoUpdate' was not declared in this scope
+..\Read_Receiver_Serial.cpp:48: error: 'EnableTaskMonitor' was not declared in this scope
+..\Read_Receiver_Serial.cpp:49: error: 'EnableSmartTraps' was not declared in this scope
+..\Read_Receiver_Serial.cpp:54: error: 'SerialClose' was not declared in this scope
+..\Read_Receiver_Serial.cpp:55: error: 'eParityNone' was not declared in this scope
+..\Read_Receiver_Serial.cpp:55: error: 'OpenSerial' was not declared in this scope
+..\Read_Receiver_Serial.cpp:59: error: 'uint16_t' was not declared in this scope
+..\Read_Receiver_Serial.cpp:59: error: expected `;' before 'throttle'
+..\Read_Receiver_Serial.cpp:63: error: 'ReadWithTimeout' was not declared in this scope
+..\Read_Receiver_Serial.cpp:73: error: 'throttle' was not declared in this scope
+..\Read_Receiver_Serial.cpp:74: error: 'elevator' was not declared in this scope
+..\Read_Receiver_Serial.cpp:75: error: 'rudder' was not declared in this scope
+..\Read_Receiver_Serial.cpp:78: error: 'aeliron' was not declared in this scope
+..\Read_Receiver_Serial.cpp:80: error: 'aeliron' was not declared in this scope
+..\Read_Receiver_Serial.cpp:82: error: 'aeliron' was not declared in this scope
+Build error occurred, build is stopped
+Time consumed: 297  ms.  

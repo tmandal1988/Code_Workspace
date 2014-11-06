@@ -1,0 +1,62 @@
+/*
+ * Accessory_Functions.cpp
+ *
+ *  Created on: Oct 28, 2014
+ *      Author: Tanmay
+ */
+///included
+#include "predef.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <basictypes.h>
+#include <ucos.h>
+#include <ctype.h>
+#include <startnet.h>
+#include <autoupdate.h>
+#include <dhcpclient.h>
+#include <taskmon.h>
+#include <smarttrap.h>
+#include <effs_fat/fat.h>
+#include <effs_fat/multi_drive_mmc_mcf.h>
+#include <effs_fat/effs_utils.h>
+#include <sim.h>
+#include <pins.h>
+#include <ucosmcfc.h>
+#include <pinconstant.h>
+#include <HiResTimer.h>
+#include <utils.h>
+#include <constants.h>
+#include <cfinter.h>
+#include <math.h>
+#include <serial.h>
+#include <dspi.h> //needed for IMU communication
+#include "PINS_Definations.h"
+#include "FileSystemUtils.h"
+#include "Card_Routines.h"
+#include <pitr_sem.h>//for PIT SEM
+#include "Accessory_Functions.h" //Housekeeping functions
+
+void Usual_Routine() {
+	InitializeStack();
+	OSChangePrio (MAIN_PRIO);
+	EnableAutoUpdate();
+	EnableTaskMonitor();
+	EnableSmartTraps();
+	initPINS();
+	DSPIInit(3, 2000000, 16, 0x00, 1, 1, 1, 0, 0, 0); //Initializing the Hardware to talk to IMU
+}
+
+void OpenFileRoutine(struct FileRoutines* OpenOnboardSD) {
+	f_enterFS();
+	(*OpenOnboardSD).drv =OpenOnBoardFlash();
+	iprintf("%ld********************\n",(*OpenOnboardSD).drv);
+	int *card_status = initOnBoardSD((*OpenOnboardSD).drv);
+	(*OpenOnboardSD).number_of_files=card_status[1] + 1;
+	sprintf(File_name, "LOG%d.txt", (*OpenOnboardSD).number_of_files);
+
+	//(*OpenOnboardSD).fp = f_open(File_name, "w+");
+
+	//iprintf("%d.........................\n", (*OpenOnboardSD)->drv);
+
+}
+

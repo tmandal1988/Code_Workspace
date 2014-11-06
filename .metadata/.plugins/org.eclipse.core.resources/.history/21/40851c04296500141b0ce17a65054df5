@@ -1,0 +1,24 @@
+/*
+ * Accessory_Functions.h
+ *
+ *  Created on: Oct 28, 2014
+ *      Author: Tanmay
+ */
+
+#include <ucos.h>
+#include "FileSystemUtils.h"
+#include "Card_Routines.h"
+#include <ucos.h>
+#include <stdio.h>
+#include <effs_fat/fat.h>
+#include <effs_fat/multi_drive_mmc_mcf.h>
+#include <effs_fat/effs_utils.h>
+
+#ifndef ACCESSORY_FUNCTIONS_H_
+#define ACCESSORY_FUNCTIONS_H_
+
+void Usual_Routine();
+
+
+
+#endif /* ACCESSORY_FUNCTIONS_H_ */

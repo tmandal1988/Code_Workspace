@@ -1,0 +1,27 @@
+/*
+ * Accessory_Functions.h
+ *
+ *  Created on: Oct 28, 2014
+ *      Author: Tanmay
+ */
+
+
+#ifndef ACCESSORY_FUNCTIONS_H_
+#define ACCESSORY_FUNCTIONS_H_
+
+#include "Accessory_Functions.h" //Housekeeping functions
+
+struct angle{
+	double roll;
+	double pitch;
+	double yaw;
+};
+
+void Usual_Routine();
+void CreateTasks();
+void OpenFileRoutine(struct FileRoutines* OpenOnboardSD);
+void GetIMUdata(BYTE IMU_command[],uint8_t Command_buffer_size,double IMU_data[],uint8_t IMU_raw[]);
+
+
+
+#endif /* ACCESSORY_FUNCTIONS_H_ */

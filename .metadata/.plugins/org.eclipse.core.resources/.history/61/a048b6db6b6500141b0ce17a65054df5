@@ -1,0 +1,84 @@
+/*
+ * Accessory_Functions.cpp
+ *
+ *  Created on: Oct 28, 2014
+ *      Author: Tanmay
+ */
+///included
+#include "predef.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <basictypes.h>
+#include <ucos.h>
+#include <ctype.h>
+#include <startnet.h>
+#include <autoupdate.h>
+#include <dhcpclient.h>
+#include <taskmon.h>
+#include <smarttrap.h>
+#include <effs_fat/fat.h>
+#include <effs_fat/multi_drive_mmc_mcf.h>
+#include <effs_fat/effs_utils.h>
+#include <sim.h>
+#include <pins.h>
+#include <ucosmcfc.h>
+#include <pinconstant.h>
+#include <HiResTimer.h>
+#include <utils.h>
+#include <constants.h>
+#include <cfinter.h>
+#include <math.h>
+#include <serial.h>
+#include <dspi.h> //needed for IMU communication
+#include "PINS_Definations.h"
+#include "FileSystemUtils.h"
+#include "Card_Routines.h"
+#include <pitr_sem.h>//for PIT SEM
+#include "Accessory_Functions.h" //Housekeeping functions
+
+void Usual_Routine() {
+	InitializeStack();
+	OSChangePrio (MAIN_PRIO);
+	EnableAutoUpdate();
+	EnableTaskMonitor();
+	EnableSmartTraps();
+	initPINS();
+	DSPIInit(3, 2000000, 16, 0x00, 1, 1, 1, 0, 0, 0); //Initializing the Hardware to talk to IMU
+}
+
+void OpenFileRoutine(struct FileRoutines* OpenOnboardSD) {
+
+	char File_name[20]={0};
+	(*OpenOnboardSD).drv =OpenOnBoardFlash();
+	int *card_status = initOnBoardSD((*OpenOnboardSD).drv);
+	uint8_t n=card_status[1] + 1;
+	siprintf(File_name, "LOG%d.txt", n);
+
+	(*OpenOnboardSD).fp = f_open(File_name, "w+");
+
+}
+
+void GetIMUdata(BYTE IMU_command[],uint8_t Command_buffer_size,double IMU_data[],uint8_t IMU_raw[]){
+
+	DSPIStart(3, IMU_command, IMU_raw, Command_buffer_size, NULL); //start talking to IMU
+	while (!DSPIdone(3)) {
+	}; //wait for DSPI to finish
+	IMU_data[0] = 0.02 * (short int) (IMU_raw[0] * 256 + IMU_raw[1]); //Z Gyro
+	IMU_data[1] = 0.00025 * (short int) (IMU_raw[2] * 256 + IMU_raw[3]); //Zero For some reason
+	IMU_data[2] = 0.00025 * (short int) (IMU_raw[4] * 256 + IMU_raw[5]); //X Accel
+	IMU_data[3] = 0.00025 * (short int) (IMU_raw[6] * 256 + IMU_raw[7]); //Y Accel
+	IMU_data[4] = 0.00025 * (short int) (IMU_raw[8] * 256 + IMU_raw[9]); //Z Accel
+	IMU_data[5] = 0.02 * (short int) (IMU_raw[10] * 256 + IMU_raw[11]); // X Gyro
+	IMU_data[6] = 0.02 * (short int) (IMU_raw[12] * 256 + IMU_raw[13]); // Y Gyro
+}
+
+double GetTiltAngle_Pitch(double IMU_data[]){
+	return(-atan(-IMU_data[2] / sqrt(IMU_data[3] * IMU_data[3]+ IMU_data[4] * IMU_data[4])));
+
+}
+
+double GetTiltAngle_Roll(double IMU_data[]){
+
+	return(atan(IMU_data[3] / IMU_data[4]));
+}
+

@@ -1,0 +1,244 @@
+/*
+ * GenVI_Netburner_Advanced.cpp
+ *
+ *  Created on: Nov 5, 2014
+ *      Author: Tanmay
+ */
+
+
+///included
+#include "predef.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <basictypes.h>
+#include <ucos.h>
+#include <ctype.h>
+#include <startnet.h>
+#include <autoupdate.h>
+#include <dhcpclient.h>
+#include <taskmon.h>
+#include <smarttrap.h>
+#include <effs_fat/fat.h>
+#include <effs_fat/multi_drive_mmc_mcf.h>
+#include <effs_fat/effs_utils.h>
+#include <sim.h>
+#include <pins.h>
+#include <ucosmcfc.h>
+#include <pinconstant.h>
+#include <HiResTimer.h>
+#include <utils.h>
+#include <constants.h>
+#include <cfinter.h>
+#include <math.h>
+#include <serial.h>
+#include <dspi.h> //needed for IMU communication
+#include "PINS_Definations.h"
+#include "FileSystemUtils.h"
+#include "Card_Routines.h"
+#include <pitr_sem.h>//for PIT SEM
+#include "Accessory_Functions.h" //Housekeeping functions
+
+//IMU Filter Task variables
+asm(" .align 4 ");
+DWORD IMU_Filter_LoopStk[USER_TASK_STK_SIZE] __attribute__((aligned(4)));
+
+
+
+extern "C" {
+void UserMain(void * pd);
+//void SetIntc(int intc, long func, int source, int level);
+}
+
+const char *AppName = "GenVI Avionics Netburner Code v1";
+
+
+static uint16_t pilot_throttle=0,pilot_aeliron=0,pilot_elevator=0,pilot_rudder=0;
+
+/**********************Task for reading receiver data******************************/
+void Read_Spektrum_Receiver(void *) { //Reads Data from Spektrum Receiver
+
+	SerialClose(2);
+	int fdSpektrum = OpenSerial(2, 115200, 1, 8, eParityNone);
+	char spektrum_packet_raw[30] = { 0 };
+	uint8_t i = 2;
+
+	while (1) {
+			read(fdSpektrum, &spektrum_packet_raw[0], 1);
+			if ((unsigned char) spektrum_packet_raw[0] == 0xFF) {
+				read(fdSpektrum, &spektrum_packet_raw[1], 1);
+				if ((unsigned char) spektrum_packet_raw[1] == 0xFF) {
+					for (i = 2; i < 5; i++)
+						read(fdSpektrum, &spektrum_packet_raw[i], 1);
+					if ((unsigned char) (spektrum_packet_raw[4] & 0x80)
+							== 0x80) {
+						for (i = 5; i < 30; i++)
+							read(fdSpektrum, &spektrum_packet_raw[i], 1);
+
+						pilot_throttle = (uint16_t)((spektrum_packet_raw[4] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[5]);
+
+						pilot_rudder = (uint16_t)((spektrum_packet_raw[8] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[9]);
+
+						if (spektrum_packet_raw[20] != 0){
+							pilot_aeliron = (uint16_t)((spektrum_packet_raw[20] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[21]);
+							pilot_elevator = (uint16_t)((spektrum_packet_raw[24] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[25]);
+						}
+						else{
+							pilot_aeliron = (uint16_t)((spektrum_packet_raw[21] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[22]);
+							pilot_elevator = (uint16_t)((spektrum_packet_raw[25] & 0x07) * 256) + (uint8_t)(spektrum_packet_raw[26]);
+						}
+
+						//iprintf("%d %d %d %d\n",pilot_throttle,pilot_elevator,pilot_aeliron,pilot_rudder);
+						}
+
+					}
+				}
+
+		} //task while
+} //task
+
+void IMU_Filter_Loop(void *) { //runs Filter loop and saves data to the SD-Card
+
+	iprintf("\n%s Application started running on Laptop\r\n", AppName);
+
+	////Initialize 100Hz Semaphore Timer to time the filter loop
+	OS_SEM PitSem1; //Time Sem
+	OSSemInit(&PitSem1, 0);
+	// Init for timer 1, at 10ms second intervals
+	InitPitOSSem(1, &PitSem1, 100);
+
+	//Initialize the timer to measure time difference between adjacent data points
+	HiResTimer* timer;
+	timer = HiResTimer::getHiResTimer(0); //for keeping time
+	timer->init();
+
+	//IMU variables
+	BYTE IMU_command[14] = { xahigh, 00, yahigh, 00, zahigh, 00, xghigh, 00,yghigh, 00, yghigh, 00, zghigh, 00 };
+	double IMU_data[7] = { 0, 0, 0, 0, 0, 0 }; //0-Gyro Z,1-Accel X,2-Accel Y,3-Accel Z,4 Gyro X,5 Gyro Y;
+	uint8_t IMU_raw[14] = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ,0,0 };
+
+	uint16_t i = 0;//index
+
+	//Angle variables
+	angle complimentary_filter={0,0};
+	angle tilt_angle={0,0};
+
+
+	//File Routines
+	f_enterFS();
+	FileRoutines OpenOnboardSD;
+	//OpenFileRoutine(&OpenOnboardSD);
+
+	//Buffer to be saved on the SD card
+	char SD_card[30] = { 0 };
+	SD_card[0] = 0xAA;
+	SD_card[1] = 0xAB;
+	SD_card[2] = 0xBB;
+	uint16_t flush_count=0;
+
+	for (i = 0; i < 5000; i++) { //Initializing the angle values
+
+		GetIMUdata(IMU_command,14,IMU_data,IMU_raw);
+
+		//Getting angle from accelerometer
+		tilt_angle.roll =( GetTiltAngle_Roll(IMU_data) + i * tilt_angle.roll) / (i + 1);
+		tilt_angle.pitch =( GetTiltAngle_Pitch(IMU_data)+ i * tilt_angle.pitch) / (i + 1);
+	}
+
+	complimentary_filter.roll = tilt_angle.roll * rad2deg;
+	complimentary_filter.pitch = tilt_angle.pitch * rad2deg;
+
+	//printf("Roll=%0.2f,Pitch=%0.2f\n",complimentary_filter.roll,complimentary_filter.pitch);
+
+
+
+	int fdlogger=SerialRoutine();
+
+	double LastTime=0;
+	timer->start();
+
+	while (J1[7]) {
+
+		BYTE status = OSSemPend(&PitSem1, TICKS_PER_SECOND * 5);
+
+		if (status == OS_NO_ERR) {
+
+			GetIMUdata(IMU_command,14,IMU_data,IMU_raw);
+			GetAttitude(IMU_data,&complimentary_filter);
+			printf("A roll=%0.2f\n",GetTiltAngle_Roll(IMU_data));
+
+
+			AssignIMUtoSD(SD_card,IMU_raw);
+
+
+
+			SD_card[15] = (pilot_throttle & 0xFF00) >> 8;
+			SD_card[16]= (pilot_throttle & 0x00FF);
+
+			SD_card[17] = (pilot_elevator & 0xFF00) >> 8;
+			SD_card[18]= (pilot_elevator & 0x00FF);
+
+			SD_card[19] = (pilot_aeliron & 0xFF00) >> 8;
+			SD_card[20]= (pilot_aeliron  & 0x00FF);
+
+			SD_card[21] = (pilot_rudder & 0xFF00) >> 8;
+			SD_card[22]= (pilot_rudder  & 0x00FF);
+
+
+			AssignAttitudetoSD(complimentary_filter,SD_card);
+
+
+			double CurrentTime = timer->readTime();
+			uint8_t Int_Delta_Time =(CurrentTime-LastTime)*10000;
+			LastTime=CurrentTime;
+
+			SD_card[27] = Int_Delta_Time;
+			SD_card[28] = 0;
+
+			SD_card[29] = SD_card[29] + 1;
+
+
+			if (OpenOnboardSD.fp) {
+				//f_write(&SD_card, 1, 30, taskfp);
+			}
+
+			i = 0;
+
+			for (i = 1; i < 30; i++) {
+				write(fdlogger, &SD_card[i], 1);
+			}
+
+
+			flush_count +=flush_count;
+			if(flush_count==29999){
+				//f_flush(OpenOnboardSD.fp);
+				flush_count=0;
+			}
+
+			J2[48] ^= 1;
+		} //If for PIT Sem
+	} //Task While Loop
+	J2[48] = 1;
+	//f_close(OpenOnboardSD.fp);
+	//UnmountFlash(OpenOnboardSD.drv);
+	//f_releaseFS();
+
+} //IMU_Filter_Loop Task
+
+/*****************************UserMain***************************************************/
+void UserMain(void* pd) {
+
+	/////Usual Routine
+	Usual_Routine();
+
+	OSTimeDly(TICKS_PER_SECOND*5);
+
+	//Task Routines
+	OSSimpleTaskCreate(IMU_Filter_Loop,MAIN_PRIO+2);//Creating IMU Filter task
+	OSSimpleTaskCreate(Read_Spektrum_Receiver, MAIN_PRIO + 1); //Creating Receiver Reading Task
+
+	while (J1[7]) {
+		OSTimeDly(TICKS_PER_SECOND * 30);
+	}//Main While
+}//Main Task
+
+

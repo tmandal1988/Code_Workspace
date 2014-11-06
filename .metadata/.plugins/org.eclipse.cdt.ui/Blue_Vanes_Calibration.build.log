@@ -1,0 +1,28 @@
+
+**** Rebuild of configuration Release for project Blue_Vanes_Calibration ****
+
+**** Internal Builder is used for build               ****
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Blue_Vanes_Calibration -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o SimpleAD.o ..\SimpleAD.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Blue_Vanes_Calibration -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Accessory_Functions.o ..\Accessory_Functions.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Blue_Vanes_Calibration -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Card_Routines.o ..\Card_Routines.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Blue_Vanes_Calibration -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o FileSystemUtils.o ..\FileSystemUtils.cpp
+m68k-elf-g++ -O2 -falign-functions=4 -I/nburn/include -I/nburn/MOD5441X/include -I/nburn/gcc-m68k/m68k-elf/include -IC:\Users\Tanmay\Desktop\Work\Electronics\Netburner\Code_Workspace\Blue_Vanes_Calibration -gdwarf-2 -Wall -Wno-write-strings -c -fmessage-length=0 -fno-rtti -fno-exceptions -mcpu=5206e -DMOD5441X -DMCF5441X -o Blue_Vanes_Calibration.o ..\Blue_Vanes_Calibration.cpp
+m68k-elf-g++ SimpleAD.o FileSystemUtils.o Card_Routines.o Blue_Vanes_Calibration.o Accessory_Functions.o -Wl,-Map=Blue_Vanes_Calibration.map -mcpu=5206e -Wl -Wl,-n -T/nburn/MOD5441X/lib/MOD5441X.ld -Wl,-R/nburn/MOD5441X/lib/sys.ld -Wl,--start-group,/nburn/lib/MOD5441X.a /nburn/lib/NetBurner.a /nburn/lib/FatFile.a C:\nburn\lib\debugLibrary.a C:\nburn\lib\Lua_Full.a C:\nburn\lib\nb-libxively.a C:\nburn\lib\nbwifilib.a C:\nburn\lib\webclient.a -Wl,--end-group -oBlue_Vanes_Calibration.elf
+m68k-elf-objcopy Blue_Vanes_Calibration.elf --strip-all --output-target=srec Blue_Vanes_Calibration.s19
+compcode Blue_Vanes_Calibration.s19 Blue_Vanes_Calibration_APP.s19 -R 0xC0040000 0xC2000000 -PMOD5441X
+Block starts at 40000400 
+Block ends at 400340b4 
+Block size= 207K
+Execution starts at 40000400 
+compressed 212148 bytes into 127187 bytes
+Code CheckSum= 55091d45
+Struct CheckSum= 6d46ff82
+S records output with a base address of c0040000
+S records output with a final address of c005f0eb
+About to write S7...
+******************************Build summary ******************************
+Used 127211 bytes of 33292288 available flash (0.38%)
+Used 812120 bytes of 67108095 available ram (1.21%)
+NNDK release tag version:2.6.7
+Build complete for project Blue_Vanes_Calibration
+Time consumed: 3440  ms.  

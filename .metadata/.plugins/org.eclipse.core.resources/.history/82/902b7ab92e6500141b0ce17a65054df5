@@ -1,0 +1,18 @@
+/*
+ * Accessory_Functions.h
+ *
+ *  Created on: Oct 28, 2014
+ *      Author: Tanmay
+ */
+#include "Accessory_Functions.h" //Housekeeping functions
+
+#ifndef ACCESSORY_FUNCTIONS_H_
+#define ACCESSORY_FUNCTIONS_H_
+
+void Usual_Routine();
+void CreateTasks();
+void OpenFileRoutine(FileRoutines *OpenOnboardSD);
+
+
+
+#endif /* ACCESSORY_FUNCTIONS_H_ */
