@@ -45,7 +45,7 @@ void UserMain(void * pd);
 //void SetIntc(int intc, long func, int source, int level);
 }
 
-const char *AppName = "GenVI Avionics Netburner Advanced Code v1";
+const char *AppName = "GenVI Avionics Netburner Firmware v2";
 
 
 static uint16_t pilot_input[4]={0};//0.Throttle, 1.Aileron, 2.Elevator,3.Rudder

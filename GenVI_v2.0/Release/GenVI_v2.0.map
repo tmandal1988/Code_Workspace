@@ -1714,106 +1714,106 @@ END GROUP
                 0x40036fde                __clz_tab
  *(.rodata.*)
  .rodata.str1.1
-                0x400370de       0x44 GenVI_v2.0.o
+                0x400370de       0x3f GenVI_v2.0.o
  .rodata.str1.1
-                0x40037122      0x5a2 FileSystemUtils.o
+                0x4003711d      0x5a2 FileSystemUtils.o
                                 0x5b7 (size before relaxing)
  .rodata.str1.1
-                0x400376c4       0x30 Card_Routines.o
+                0x400376bf       0x30 Card_Routines.o
  .rodata.str1.1
-                0x400376f4        0xa Accessory_Functions.o
+                0x400376ef        0xa Accessory_Functions.o
                                   0xd (size before relaxing)
  .rodata.str1.1
-                0x400376fe        0x9 /nburn/lib/MOD5441X.a(bsp.o)
+                0x400376f9        0x9 /nburn/lib/MOD5441X.a(bsp.o)
  .rodata.str1.1
-                0x40037707      0x156 /nburn/lib/MOD5441X.a(serial.o)
+                0x40037702      0x156 /nburn/lib/MOD5441X.a(serial.o)
                                 0x15a (size before relaxing)
  .rodata.str1.1
-                0x4003785d       0xcf /nburn/lib/MOD5441X.a(HiResTimer.o)
+                0x40037858       0xcf /nburn/lib/MOD5441X.a(HiResTimer.o)
  .rodata.str1.1
-                0x4003792c        0x5 /nburn/lib/NetBurner.a(ucos.o)
+                0x40037927        0x5 /nburn/lib/NetBurner.a(ucos.o)
  .rodata.str1.1
-                0x40037931        0x3 /nburn/lib/NetBurner.a(fileio.o)
+                0x4003792c        0x3 /nburn/lib/NetBurner.a(fileio.o)
                                   0x6 (size before relaxing)
  .rodata.str1.1
-                0x40037934       0xc9 /nburn/lib/NetBurner.a(system.o)
+                0x4003792f       0xc9 /nburn/lib/NetBurner.a(system.o)
                                  0xcd (size before relaxing)
  .rodata.str1.1
-                0x400379fd        0x5 /nburn/lib/NetBurner.a(main.o)
+                0x400379f8        0x5 /nburn/lib/NetBurner.a(main.o)
  .rodata.str1.1
-                0x40037a02      0x174 /nburn/lib/NetBurner.a(utils.o)
+                0x400379fd      0x174 /nburn/lib/NetBurner.a(utils.o)
                                 0x17b (size before relaxing)
  .rodata.str1.1
-                0x40037b76      0x212 /nburn/lib/NetBurner.a(ip.o)
+                0x40037b71      0x212 /nburn/lib/NetBurner.a(ip.o)
                                 0x217 (size before relaxing)
  .rodata.str1.1
-                0x40037d88       0x68 /nburn/lib/NetBurner.a(buffers.o)
+                0x40037d83       0x68 /nburn/lib/NetBurner.a(buffers.o)
                                  0x70 (size before relaxing)
  .rodata.str1.1
-                0x40037df0       0x50 /nburn/lib/NetBurner.a(arp.o)
+                0x40037deb       0x50 /nburn/lib/NetBurner.a(arp.o)
  .rodata.str1.1
-                0x40037e40       0x18 /nburn/lib/NetBurner.a(udp.o)
+                0x40037e3b       0x18 /nburn/lib/NetBurner.a(udp.o)
  .rodata.str1.1
-                0x40037e58      0x38f /nburn/lib/NetBurner.a(tcp.o)
+                0x40037e53      0x38f /nburn/lib/NetBurner.a(tcp.o)
                                 0x392 (size before relaxing)
  .rodata.str1.1
-                0x400381e7       0xa4 /nburn/lib/NetBurner.a(taskmon.o)
+                0x400381e2       0xa4 /nburn/lib/NetBurner.a(taskmon.o)
                                  0xa7 (size before relaxing)
  .rodata.str1.1
-                0x4003828b      0x4f9 /nburn/lib/NetBurner.a(smarttrap.o)
+                0x40038286      0x4f9 /nburn/lib/NetBurner.a(smarttrap.o)
                                 0x540 (size before relaxing)
  .rodata.str1.1
-                0x40038784       0x11 /nburn/lib/FatFile.a(common.o)
+                0x4003877f       0x11 /nburn/lib/FatFile.a(common.o)
  .rodata.str1.1
-                0x40038795       0x12 /nburn/lib/FatFile.a(fat.o)
+                0x40038790       0x12 /nburn/lib/FatFile.a(fat.o)
                                  0x19 (size before relaxing)
  .rodata.str1.1
-                0x400387a7        0xe /nburn/lib/MOD5441X.a(ethernet.o)
+                0x400387a2        0xe /nburn/lib/MOD5441X.a(ethernet.o)
  .rodata.str1.1
-                0x400387b5      0x452 /nburn/lib/MOD5441X.a(etherprint.o)
+                0x400387b0      0x452 /nburn/lib/MOD5441X.a(etherprint.o)
                                 0x46c (size before relaxing)
  .rodata.str1.1
-                0x40038c07        0x5 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libm.a(lib_a-w_sqrt.o)
+                0x40038c02        0x5 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libm.a(lib_a-w_sqrt.o)
  .rodata.str1.1
-                0x40038c0c        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
+                0x40038c07        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-impure.o)
  .rodata.str1.1
                 0x00000000        0x2 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-puts.o)
  .rodata.str1.1
-                0x40038c0e        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-tzvars.o)
+                0x40038c09        0x4 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-tzvars.o)
  .rodata.str1.1
-                0x40038c12       0x43 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
+                0x40038c0d       0x43 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfiprintf.o)
  .rodata.str1.1
-                0x40038c55       0x10 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
+                0x40038c50       0x10 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-vfprintf.o)
                                  0x57 (size before relaxing)
  .rodata.str1.1
-                0x40038c65       0x1d c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
+                0x40038c60       0x1d c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-wctomb_r.o)
  .rodata.str1.1
-                0x40038c82        0xd c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
+                0x40038c7d        0xd c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-dtoa.o)
                                   0xf (size before relaxing)
  .rodata.str1.1
-                0x40038c8f        0xb c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
+                0x40038c8a        0xb c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/../../../../m68k-elf/lib/m5206e\libc.a(lib_a-locale.o)
                                  0x10 (size before relaxing)
  *(.gnu.linkonce.*)
  *(.gcc_except_table)
-                0x40038c9c                . = ALIGN (0x4)
- *fill*         0x40038c9a        0x2 00
-                0x40038c9c                __INIT_SECTION__ = .
-                0x40038c9c        0x4 LONG 0x4e560000
+                0x40038c98                . = ALIGN (0x4)
+ *fill*         0x40038c95        0x3 00
+                0x40038c98                __INIT_SECTION__ = .
+                0x40038c98        0x4 LONG 0x4e560000
  *(.init)
- .init          0x40038ca0        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
- .init          0x40038ca6        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
-                0x40038cac        0x2 SHORT 0x4e5e
-                0x40038cae        0x2 SHORT 0x4e75
-                0x40038cb0                . = ALIGN (0x4)
-                0x40038cb0                __FINI_SECTION__ = .
-                0x40038cb0        0x4 LONG 0x4e560000
+ .init          0x40038c9c        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+ .init          0x40038ca2        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtend.o
+                0x40038ca8        0x2 SHORT 0x4e5e
+                0x40038caa        0x2 SHORT 0x4e75
+                0x40038cac                . = ALIGN (0x4)
+                0x40038cac                __FINI_SECTION__ = .
+                0x40038cac        0x4 LONG 0x4e560000
  *(.fini)
- .fini          0x40038cb4        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
-                0x40038cba        0x2 SHORT 0x4e5e
-                0x40038cbc        0x2 SHORT 0x4e75
+ .fini          0x40038cb0        0x6 c:/nburn/gcc-m68k/bin/../lib/gcc/m68k-elf/4.2.1/m5206e/crtbegin.o
+                0x40038cb6        0x2 SHORT 0x4e5e
+                0x40038cb8        0x2 SHORT 0x4e75
  *(.lit)
                 0x40038cc0                . = ALIGN (0x10)
- *fill*         0x40038cbe        0x2 00
+ *fill*         0x40038cba        0x6 00
                 0x40038cc0                _etext = .
                 0x40038cc0                etext = .
 
