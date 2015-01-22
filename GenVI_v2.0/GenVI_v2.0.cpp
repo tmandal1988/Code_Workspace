@@ -177,12 +177,12 @@ void IMU_Filter_Loop(void *) { //runs Filter loop and saves data to the SD-Card
 
 
 			if (OpenOnboardSD.fp) {
-				f_write(&SD_card, 1, 30, OpenOnboardSD.fp);
+				f_write(&SD_card, 1, 36, OpenOnboardSD.fp);
 			}
 
 			i = 0;
 
-			for (i = 1; i < 30; i++) {
+			for (i = 1; i < 36; i++) {
 				write(fdlogger, &SD_card[i], 1);
 			}
 
