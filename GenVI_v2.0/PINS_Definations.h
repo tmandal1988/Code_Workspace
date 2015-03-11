@@ -34,12 +34,18 @@
 #define rad2deg 57.296f
 #define deg2rad 0.017f
 
+#define P_INIT 0
+#define P_START 0
+
+
 #ifdef __cplusplus
 extern "C"
 {
 #endif
 
 void initPINS();
+uint16_t configPWM(int module,int freq);
+void setPWM(int module,int PWMval);
 
 
 #ifdef __cplusplus
