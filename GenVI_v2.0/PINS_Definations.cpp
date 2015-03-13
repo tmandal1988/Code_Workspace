@@ -11,7 +11,7 @@
 #include <pins.h>
 #include <serial.h>
 
-static uint16_t LDOK=0x0000;
+
 
 void initPINS()
 {
@@ -58,8 +58,8 @@ void initPINS()
 	J1[13].function(0);//AP_OUT
 
 
-	J2[15]=1;J2[17]=1;J2[18]=1;J2[37]=1;J1[5]=1;J1[13]=1;//J2[43]=1;///Running everything on Autopilot.
-	J2[45]=1;J2[47]=1;
+	J2[15]=0;J2[17]=0;J2[18]=1;J2[37]=0;J1[5]=0;J1[13]=0;//J2[43]=1;///Running everything on Autopilot.
+	J2[45]=0;J2[47]=0;
 
 }
 

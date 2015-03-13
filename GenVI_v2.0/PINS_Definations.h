@@ -37,11 +37,15 @@
 #define P_INIT 0
 #define P_START 0
 
+static uint16_t LDOK=0x0000;
+
 
 #ifdef __cplusplus
 extern "C"
 {
 #endif
+
+
 
 void initPINS();
 uint16_t configPWM(int module,int freq);
