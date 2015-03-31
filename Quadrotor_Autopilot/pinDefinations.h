@@ -40,6 +40,7 @@
 void initPins();
 uint16_t configPWM(int module,int freq);
 void setPWM(int module,int PWMval,bool upload);
+void updatePWM();
 
 
 #endif /* PINDEFINATIONS_H_ */

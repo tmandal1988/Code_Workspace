@@ -253,3 +253,10 @@ void setPWM(int module,int PWMval, bool upload){
 
 }
 
+void updatePWM(){
+	uint16_t pwmr=0;
+	pwmr = sim1.mcpwm.mcr;
+	sim1.mcpwm.mcr |= LDOK;
+
+}
+
